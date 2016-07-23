@@ -1,5 +1,39 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+  url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+  url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 // =======================================
 // Base
 // =======================================
 
 @import "base/reset";
+@import "base/globals";
+@import "base/vars";
+
+// =======================================
+// Mixin
+// =======================================
+
+@import "mixin/opacity";
+
+// =======================================
+// Layout
+// =======================================
+
+@import "layout/sections";

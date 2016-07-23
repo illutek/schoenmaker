@@ -3,3 +3,47 @@
 //================================
 
 // Section Start
+
+.video__bcg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  .videobcg__video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+  }
+}
+
+.section__firma__name {
+  background: url("../images/video__bcg__grey.png") no-repeat;
+  background-size: cover;
+  @include opacity-decimal(.9);
+  z-index: -50;
+  min-height: 100vh;
+  .firma__name {
+    padding-top: 20%;
+    color: #ffffff;
+    h1 {
+      font-family: 'open_sansbold';
+      font-size: 4.5em;
+    }
+  }
+}
+
+.core__business {
+  height: 500px;
+}
