@@ -4,12 +4,12 @@
 
 // Section Start
 
-.section__firma__name {
-  background: url("../images/video__bcg__grey.png") no-repeat;
+.section-firma-name {
+  background: url("../images/bcg_80pct.png") no-repeat;
   background-size: cover;
-  @include opacity-decimal(.9);
-  z-index: -50;
   min-height: 100vh;
+  position: relative;
+
   .firma__name {
     padding-top: 20%;
     padding-bottom: 10%;

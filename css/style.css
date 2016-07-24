@@ -58,49 +58,36 @@ h1 {
 video {
   display: block; }
 
-.section__firma__name {
-  background: url("../images/video__bcg__grey.png") no-repeat;
+.section-firma-name {
+  background: url("../images/bcg_80pct.png") no-repeat;
   background-size: cover;
-  filter: alpha(opacity=90);
-  -ms-filter: "alpha(opacity=90)";
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
-  z-index: -50;
-  min-height: 100vh; }
-  .section__firma__name .firma__name {
+  min-height: 100vh;
+  position: relative; }
+  .section-firma-name .firma__name {
     padding-top: 20%;
     padding-bottom: 10%;
     color: #ffffff; }
-    .section__firma__name .firma__name h1 {
+    .section-firma-name .firma__name h1 {
       font-family: 'open_sansbold';
       font-size: 4.5em; }
-  .section__firma__name .arrow {
+  .section-firma-name .arrow {
     margin: auto;
     width: 112px; }
 
 .section__core__business {
   height: 500px; }
 
-.video__bcg {
+.video-container {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   overflow: hidden;
-  z-index: -100; }
-  .video__bcg .videobcg__video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover; }
+  width: 100%;
+  height: 100%; }
+  .video-container video {
+    position: absolute;
+    z-index: -100; }
+  .video-container .section-firma-name__video {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
