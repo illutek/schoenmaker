@@ -5,24 +5,10 @@
 // Section Start
 
 .section-firma-name {
-  background: url("../images/bcg_80pct.png") no-repeat;
-  background-size: cover;
-  min-height: 100vh;
   position: relative;
-
-  .firma__name {
-    padding-top: 20%;
-    padding-bottom: 10%;
-    color: #ffffff;
-    h1 {
-      font-family: 'open_sansbold';
-      font-size: 4.5em;
-    }
-  }
   .arrow {
     margin: auto;
     width: 112px;
-
   }
 }
 

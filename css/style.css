@@ -59,17 +59,7 @@ video {
   display: block; }
 
 .section-firma-name {
-  background: url("../images/bcg_80pct.png") no-repeat;
-  background-size: cover;
-  min-height: 100vh;
   position: relative; }
-  .section-firma-name .firma__name {
-    padding-top: 20%;
-    padding-bottom: 10%;
-    color: #ffffff; }
-    .section-firma-name .firma__name h1 {
-      font-family: 'open_sansbold';
-      font-size: 4.5em; }
   .section-firma-name .arrow {
     margin: auto;
     width: 112px; }
@@ -77,17 +67,45 @@ video {
 .section__core__business {
   height: 500px; }
 
+.no-video .video-container video, .touch .video-container video {
+  display: none; }
+
+.no-video .video-container .poster, .touch .video-container .poster {
+  display: block !important; }
+
 .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
   width: 100%;
-  height: 100%; }
+  overflow: hidden;
+  background: #000000; }
+  .video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute; }
+  .video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: url("../images/bcg_90pct.png") no-repeat;
+    background-size: cover;
+    width: 100%; }
+  .video-container .firma__name {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff; }
+    .video-container .firma__name h1 {
+      font-family: 'open_sansbold';
+      font-size: 4.5em; }
   .video-container video {
     position: absolute;
-    z-index: -100; }
-  .video-container .section-firma-name__video {
-    width: 100%; }
+    z-index: 0;
+    bottom: 0; }
+    .video-container video.fillWidth {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

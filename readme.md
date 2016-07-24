@@ -7,12 +7,6 @@ bower.json - file met de nodige pakketten (dependencies)
 default "bower_components"
 
 ##Video
-Opmerking, bij het opzetten van de html stuctuur werdt de video niet geloopt, zou in chrome een bug zijn,  
-de volgorde van oproepen video files gaf hier de oplossing.
-
-```
-<source src="../../video/video_schuren.webm" type="video/webm">
-<source src="../../video/video_schuren.mp4" type="video/mp4">
-```
+Een JavaScript oplossing toegepast om de video responsief te maken http://jsfiddle.net/bosspetta/wokoyytv/ 
 
 

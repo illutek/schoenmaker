@@ -2,21 +2,63 @@
 // @@ ++ Video background
 //================================
 
+.no-video, .touch {
+  .video-container {
+    video {
+      display: none;
+    }
+  }
+}
+
+.no-video, .touch {
+  .video-container {
+    .poster {
+      display: block !important;
+    }
+  }
+}
+
 .video-container {
-  position: absolute;
-  top: 0;
-  //right: 0;
-  //bottom: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000000;
+  .poster {
+    img {
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+  .filter {
+    z-index: 100;
+    position: absolute;
+    background: url("../images/bcg_90pct.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .firma__name {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    h1 {
+      font-family: 'open_sansbold';
+      font-size: 4.5em;
+    }
+  }
   video {
     position: absolute;
-    z-index: -100;
-
-  }
-  .section-firma-name__video {
-    width: 100%;
+    z-index: 0;
+    bottom: 0;
+    &.fillWidth {
+      width: 100%;
+    }
   }
 }
