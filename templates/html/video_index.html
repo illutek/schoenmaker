@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="../../css/style.css">
     <script src="../../bower_components/jquery/dist/jquery.js"></script>
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
-
+    <script src="../../js/video.js"></script>
 
     <title>Schoenmakerij Ronny & Annie</title>
 </head>
 <body>
 
+<!-- TODO is reeds verbeterd met een javascript oplossing, eens volgende proberen
+<!-- TODO https://github.com/stefanerickson/covervid -->
+
 
 <section class="section-firma-name">
+    <div class="video-container">
         <div class="container-firma-name">
+
                 <div class="firma__name">
                     <h1>SCHOENHERSTELLINGEN <br>Ronny & Annie</h1>
                 </div>
@@ -27,6 +30,14 @@
         <div class="arrow">
             <img src="../../images/arrow-down.png">
         </div>
+        <div class="filter"></div>
+        <video autoplay loop muted="muted" class="fillWidth">
+            <source src="../../video/VID_20160720_094628.mp4" type="video/mp4">
+        </video>
+        <div class="poster hidden">
+            <img src="../../images/poster_bcg.jpg" alt="">
+        </div>
+    </div>
 
 </section>
 

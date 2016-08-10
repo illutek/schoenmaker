@@ -6,12 +6,21 @@
 
 .section-firma-name {
   position: relative;
+  height: 500px;
   .arrow {
-    margin: auto;
-    width: 112px;
+    position: absolute;
+    bottom: 20px;
+    left: 47%;
+    right: 47%;
+    width: 6%;
+    z-index: 110;
   }
 }
 
 .section__core__business {
-  height: 500px;
+  position: relative;
+  height: 50vh;
+  .core {
+    height: 250px;
+  }
 }

@@ -40,17 +40,18 @@
     background-size: cover;
     width: 100%;
   }
-
-  .firma__name {
-    z-index: 1000;
+  .container-firma-name {
+    z-index: 110;
     position: absolute;
-    top: 35%;
-    width: 100%;
-    text-align: center;
+    top: 15%;
+    width: 50%;
+    left: 25%;
     color: #fff;
-    h1 {
-      font-family: 'open_sansbold';
-      font-size: 4.5em;
+    .firma__name {
+      h1 {
+        font-family: 'open_sansregular';
+        font-size: 5em;
+      }
     }
   }
   video {
@@ -62,3 +63,4 @@
     }
   }
 }
+

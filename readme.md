@@ -7,6 +7,7 @@ bower.json - file met de nodige pakketten (dependencies)
 default "bower_components"
 
 ##Video
+Dit verhaal gaat niet door.
 Een JavaScript oplossing toegepast om de video responsief te maken http://jsfiddle.net/bosspetta/wokoyytv/ 
 
 
