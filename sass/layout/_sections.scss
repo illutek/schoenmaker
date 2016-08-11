@@ -4,9 +4,19 @@
 
 // Section Start
 
-.section-firma-name {
+.section-company-name {
   position: relative;
   height: 500px;
+  background: url("../images/header_bcg.jpg") no-repeat;
+  background-size: cover;
+  .company__name {
+    margin-top: 150px;
+    margin-left: 10%;
+    .companyname__owners {
+      color: #ffffff;
+      font-size: 3em;
+    }
+  }
   .arrow {
     position: absolute;
     bottom: 20px;
