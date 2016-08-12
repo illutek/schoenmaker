@@ -7,12 +7,12 @@
   z-index: 1;
   right: 35px;
   .showmenu-btn {
-    width: 53px;
+    width: 48px;
     margin: 35px 0;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
     &:hover {
-      width: 50px;
+      width: 42px;
     }
   }
 }
@@ -52,6 +52,7 @@
   }
 }
 
+// niet gebruikt eens opnieuw bekijken
 @keyframes hidden {
   0% {
     height: 0px;
