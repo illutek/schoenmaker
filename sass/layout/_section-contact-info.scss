@@ -1,0 +1,17 @@
+//================================
+// @@ ++ Section Contact Info
+//================================
+
+.section-contact_info {
+  min-height: 395px;
+  background: url("../images/bcg-contact-info.png") no-repeat;
+  background-size: cover;
+  .content-info {
+    background: $yellow;
+    padding: 20px;
+    h2 {
+      background: url("../images/h2-line.png") no-repeat bottom center;
+      padding-left: 15px;
+    }
+  }
+}

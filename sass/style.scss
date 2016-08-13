@@ -31,12 +31,19 @@
 // =======================================
 
 @import "mixin/opacity";
+@import "mixin/placeholder";
 
 // =======================================
 // Layout
 // =======================================
 
 @import "layout/sections";
+@import "layout/section-company-name";
+@import "layout/section-core-business";
+@import "layout/section-aboutus";
+@import "layout/section-contact-info";
+@import "layout/section-contactform";
+@import "layout/footer";
 
 // =======================================
 // Components

@@ -2,35 +2,13 @@
 // @@ ++ Sections
 //================================
 
-// Section Start
-
-.section-company-name {
-  position: relative;
-  height: 500px;
-  background: url("../images/header_bcg.jpg") no-repeat;
-  background-size: cover;
-  .company__name {
-    margin-top: 150px;
-    margin-left: 10%;
-    .companyname__owners {
-      color: #ffffff;
-      font-size: 3em;
-    }
-  }
-  .arrow {
-    position: absolute;
-    bottom: 20px;
-    left: 47%;
-    right: 47%;
-    width: 6%;
-    z-index: 110;
+section {
+  margin-bottom: 50px;
+  h2 {
+    margin: 35px 0 0;
+    color: #ffffff;
   }
 }
 
-.section-core-business {
-  position: relative;
-  height: 400px;
-  .core {
-    height: 250px;
-  }
-}
+
+

@@ -12,16 +12,23 @@
     <script src="../../bower_components/jquery.stellar/jquery.stellar.js"></script>
     <script src="../../bower_components/wow/dist/wow.js"></script>
     <script src="../../js/menu.js"></script>
+    <script src="../../js/core-info.js"></script>
 
     <title>Schoenmakerij Ronny & Annie</title>
 </head>
 <body>
 
 <!-- menu region are converted to includes -->
+<div class="menu-header-cta">
+    <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Acties</a></li>
+    </ul>
+</div>
 <div class="menu-header-button">
     <img class="showmenu-btn" src="../../images/menu-show-icon.png">
 </div>
-<div class="menu-header">
+<div class="menu-header-main">
     <img class="closemenu-btn" src="../../images/menu-close-icon.png">
     <!-- menu items hard coded to the nodes -->
     <ul class="nav nav-pills nav-stacked">
@@ -41,40 +48,205 @@
     <div class="container container-company-name">
         <div class="company__name">
             <h1>SCHOENHERSTELLINGEN</h1>
+
             <div class="companyname__owners">
                 <p>Ronny & Annie</p>
             </div>
         </div>
-    </div><!-- end container-company-name -->
+    </div>
+    <!-- end container-company-name -->
     <div class="arrow">
         <img src="../../images/arrow-down.png">
     </div>
-</section><!-- end header section -->
+</section>
+<!-- end header section -->
 
 
-<section class="container section-core-business">
+<section class="container section-core-business-btn">
     <div class="row">
         <div class="col-md-3 core">
-            <div class="">
+            <div class="circle" id="core__shoemaking">
+                <div class="core__shoemaking text-center">
+                    <img src="../../images/shoe.png">
+                    <span>Schoenmakerij</span>
+                </div>
 
             </div>
         </div>
         <div class="col-md-3 core">
-            <div class="">
-
+            <div class="circle" id="core__keys">
+                <div class="core__keys text-center">
+                    <img src="../../images/keys.png">
+                    <span>Sleutels</span>
+                </div>
             </div>
         </div>
         <div class="col-md-3 core">
-            <div class="">
-
+            <div class="circle" id="core__engraving">
+                <div class="core__engraving text-center">
+                    <img src="../../images/engraving.png">
+                    <span>Gravures</span>
+                </div>
             </div>
         </div>
         <div class="col-md-3 core">
-            <div class="">
+            <div class="circle" id="core__carplates">
+                <div class="core__carplates text-center">
+                    <img src="../../images/car.png">
+                    <span>Autoplaten</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-core-business-info">
+    <div class="container">
+        <div class="corebusinessinfo__shoemaking content" id="core__shoemakingDIV">
+            <div class="corebusinessinfo">
+                <h2>Schoenmakerij</h2>
+
+                <p>Immer de grootste specialiteit van onze zaak: schoenen herstellen. Deze schoenmaker gunt uw schoenen
+                    een
+                    tijdje langer zodat u steeds verzorgd voor de dag komt. Bovendien kiest u op die manier voor een
+                    duurzaam
+                    en voordelig gebruik van uw schoenen.
+                </p>
+            </div>
+        </div>
+
+        <div class="corebusinessinfo__keys content" id="core__keysDIV">
+            <div class="corebusinessinfo">
+                <h2>Sleutels</h2>
+
+                <p>Immer de grootste specialiteit van onze zaak: schoenen herstellen. Deze schoenmaker gunt uw schoenen
+                    een
+                    tijdje langer zodat u steeds verzorgd voor de dag komt. Bovendien kiest u op die manier voor een
+                    duurzaam
+                    en voordelig gebruik van uw schoenen.
+                </p>
+            </div>
+        </div>
+
+        <div class="corebusinessinfo__engraving content" id="core__engravingDIV">
+            <div class="corebusinessinfo">
+                <h2>Gravures</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet enim odio. In ultrices, quam
+                    at lacinia tincidunt, mauris mauris consectetur diam, eu elementum neque tellus nec turpis. Donec
+                    faucibus luctus volutpat. Donec condimentum neque et tellus commodo, nec aliquet arcu ullamcorper.
+                    Donec faucibus luctus volutpat. Donec condimentum neque et tellus commodo, nec aliquet arcu
+                    ullamcorper.
+                </p>
+            </div>
+        </div>
+
+        <div class="corebusinessinfo__carplates content" id="core__carplatesDIV">
+            <div class="corebusinessinfo">
+                <h2>Autoplaten</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet enim odio. In ultrices, quam
+                    at lacinia tincidunt, mauris mauris consectetur diam, eu elementum neque tellus nec turpis. Donec
+                    faucibus luctus volutpat.
+                    Donec faucibus luctus volutpat. Donec condimentum neque et tellus commodo, nec aliquet arcu
+                    ullamcorper.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-aboutus">
+    <div class="container container-aboutus">
+        <div class="content-aboutus col-md-6">
+            <h2>Ronny & Annie</h2>
+
+            <p>Sed in sapien pellentesque, blandit lacus ac, ultrices urna. Curabitur et congue nibh, nec fermentum
+                arcu.
+                Nam semper scelerisque lacus volutpatvarius. Sed mauris erat, blandit tincidunt lectus quis, tempor
+                molestie
+                sem.Morbi tellus erat, lacinia a tincidunt non, dapibus non nibh. Cras ut lectus neque. Lorem ipsum
+                dolor
+                sit amet, consectetur adipiscing elit. Phasellusultrices vestibulum purus nec porttitor.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section-contact_info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-info">
+                    <h2>Openingsuren</h2>
+
+                    <p>Maandag: Gesloten</p>
+
+                    <p>Dinsdag: 08:30 - 12:00 / 13:00- 18:00</p>
+
+                    <p>Woensdag: 08:30 - 12:00 / 13:00- 18:00</p>
+
+                    <p>Donderdag: Gesloten</p>
+
+                    <p>Vrijdag: 08:30 - 12:00 / 13:00- 18:00</p>
+
+                    <p>Zaterdag: 08:30 - 12:00 / 13:00- 17:00</p>
+
+                    <p>Zondag: Gesloten</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-info">
+                    <h2>Contactgegevens</h2>
+
+                    <p>Brugstraat 13 Heusden-Zolder</p>
+
+                    <p>Telefoon: 0495509492</p>
+
+                    <p>BTW: BE000000000000</p>
+
+                    <p><a href="#">Route</a></p>
+                </div>
 
             </div>
         </div>
     </div>
 </section>
+
+<section class="section-contactform">
+    <div class="container">
+        <div class="content-contactform">
+            <h2>Ons contacteren</h2>
+
+            <p>Donec pharetra vitae enim in pharetra. Mauris at vehicula lectus. Quisque finibus risus et massa
+                tincidunt tristique.</p>
+
+            <form>
+                <div class="col-md-5">
+                    <input type="text" name="naam" placeholder="Jouw naam">
+                    <input type="email" name="email" placeholder="Jouw e-mail adres">
+                </div>
+                <div class="col-md-5">
+                    <textarea required="required" rows="5" placeholder="Bericht"></textarea>
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" value="Verzenden">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">&copy; Ronny & Annie | 2016</div>
+        <div class="col-md-4">Telefoon: 0495509492</div>
+        <div class="col-md-4"><a href="#">Brugstraat 13 Heusden-Zolder</a> </div>
+    </div>
+
+</div>
+</footer>
+
 </body>
 </html>

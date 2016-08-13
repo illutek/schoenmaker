@@ -3,13 +3,13 @@
  */
 $(document).ready(function () {
  // when loading the page menu hide
-    $('.menu-header').addClass('hiddenmenu');
+    $('.menu-header-main').addClass('hiddenmenu');
 
     $('.showmenu-btn').click(function(){
-        $('.menu-header').toggleClass('hiddenmenu');
+        $('.menu-header-main').toggleClass('hiddenmenu');
     });
 
     $('.closemenu-btn').click(function(){
-        $('.menu-header').toggleClass('hiddenmenu');
+        $('.menu-header-main').toggleClass('hiddenmenu');
     });
 });

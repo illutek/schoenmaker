@@ -1,0 +1,51 @@
+//================================
+// @@ ++ Section Core business
+//================================
+
+.section-core-business-btn {
+  position: relative;
+  height: 400px;
+  .core {
+    height: 250px;
+    margin-top: 110px;
+    .circle {
+      position: relative;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: $yellow;
+      width: 200px;
+      height: 200px;
+      padding-top: 25px;
+      cursor: pointer;
+      img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.section-core-business-info {
+  background: $yellow;
+  height: 380px;
+  .corebusinessinfo {
+    color: #ffffff;
+    padding-top: 35px;
+    text-align: center;
+  }
+  .corebusinessinfo__shoemaking {
+    margin-top: -21px;
+    background: url("../images/arrow-shoe-info.png") no-repeat center top;
+  }
+  .corebusinessinfo__keys {
+    margin-top: -21px;
+    background: url("../images/arrow-keys-info.png") no-repeat center top;
+  }
+  .corebusinessinfo__engraving {
+    margin-top: -21px;
+    background: url("../images/arrow-engraving-info.png") no-repeat center top;
+  }
+  .corebusinessinfo__carplates {
+    margin-top: -21px;
+    background: url("../images/arrow-car-info.png") no-repeat center top;
+  }
+}

@@ -54,8 +54,41 @@ h1 {
   font-size: 3.875em;
   color: #ffffff; }
 
+h2 {
+  font-size: 2.125em;
+  padding-bottom: 35px;
+  letter-spacing: 2px; }
+
+p {
+  line-height: 38px;
+  margin: 15px 0 15px;
+  font-size: 16px; }
+
+a {
+  color: #ffffff; }
+  a:hover {
+    color: #ffffff;
+    text-decoration: none; }
+    a:hover:before {
+      font-family: FontAwesome;
+      content: "\f14c";
+      display: inline-block;
+      padding-right: 5px; }
+
+a:before {
+  font-family: FontAwesome;
+  content: "\f08e";
+  display: inline-block;
+  padding-right: 3px; }
+
 video {
   display: block; }
+
+section {
+  margin-bottom: 50px; }
+  section h2 {
+    margin: 35px 0 0;
+    color: #ffffff; }
 
 .section-company-name {
   position: relative;
@@ -76,11 +109,136 @@ video {
     width: 6%;
     z-index: 110; }
 
-.section-core-business {
+.section-core-business-btn {
   position: relative;
   height: 400px; }
-  .section-core-business .core {
-    height: 250px; }
+  .section-core-business-btn .core {
+    height: 250px;
+    margin-top: 110px; }
+    .section-core-business-btn .core .circle {
+      position: relative;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: #ffbe00;
+      width: 200px;
+      height: 200px;
+      padding-top: 25px;
+      cursor: pointer; }
+      .section-core-business-btn .core .circle img {
+        margin-bottom: 15px; }
+
+.section-core-business-info {
+  background: #ffbe00;
+  height: 380px; }
+  .section-core-business-info .corebusinessinfo {
+    color: #ffffff;
+    padding-top: 35px;
+    text-align: center; }
+  .section-core-business-info .corebusinessinfo__shoemaking {
+    margin-top: -21px;
+    background: url("../images/arrow-shoe-info.png") no-repeat center top; }
+  .section-core-business-info .corebusinessinfo__keys {
+    margin-top: -21px;
+    background: url("../images/arrow-keys-info.png") no-repeat center top; }
+  .section-core-business-info .corebusinessinfo__engraving {
+    margin-top: -21px;
+    background: url("../images/arrow-engraving-info.png") no-repeat center top; }
+  .section-core-business-info .corebusinessinfo__carplates {
+    margin-top: -21px;
+    background: url("../images/arrow-car-info.png") no-repeat center top; }
+
+.section-aboutus {
+  margin-top: 50px;
+  height: 385px;
+  background: url("../images/bcg_aboutus.png") center repeat-x;
+  background-size: cover; }
+  .section-aboutus .container-aboutus {
+    height: 385px;
+    background-size: cover;
+    background: url("../images/bcg-container-aboutus.png") no-repeat; }
+    .section-aboutus .container-aboutus .content-aboutus h2 {
+      text-align: center;
+      background: url("../images/h2-line.png") no-repeat bottom center; }
+    .section-aboutus .container-aboutus .content-aboutus p {
+      color: #ffffff; }
+
+.section-contact_info {
+  min-height: 395px;
+  background: url("../images/bcg-contact-info.png") no-repeat;
+  background-size: cover; }
+  .section-contact_info .content-info {
+    background: #ffbe00;
+    padding: 20px; }
+    .section-contact_info .content-info h2 {
+      background: url("../images/h2-line.png") no-repeat bottom center;
+      padding-left: 15px; }
+
+.section-contactform {
+  min-height: 395px;
+  background: #8b8b8b;
+  margin-bottom: 0px; }
+  .section-contactform .content-contactform h2 {
+    padding-bottom: 5px; }
+  .section-contactform .content-contactform p {
+    color: #ffffff;
+    padding-bottom: 15px;
+    background: url("../images/p-line.png") no-repeat bottom center; }
+
+form input[type=text], form input[type=email], form textarea, form input[type=submit] {
+  width: 100%;
+  border: none;
+  background: #ffbe00;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px; }
+  form input[type=text] ::-webkit-input-placeholder, form input[type=email] ::-webkit-input-placeholder, form textarea ::-webkit-input-placeholder, form input[type=submit] ::-webkit-input-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+  form input[type=text] :-moz-placeholder, form input[type=email] :-moz-placeholder, form textarea :-moz-placeholder, form input[type=submit] :-moz-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+  form input[type=text] ::-moz-placeholder, form input[type=email] ::-moz-placeholder, form textarea ::-moz-placeholder, form input[type=submit] ::-moz-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+  form input[type=text] :-ms-input-placeholder, form input[type=email] :-ms-input-placeholder, form textarea :-ms-input-placeholder, form input[type=submit] :-ms-input-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+form input[type=submit] {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; }
+
+footer {
+  background: #ffbe00;
+  color: #ffffff;
+  padding: 25px 0; }
+
+.menu-header-cta {
+  position: absolute;
+  z-index: 1;
+  right: 120px;
+  top: 40px; }
+  .menu-header-cta li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    border-right: solid 1px white;
+    padding-right: 25px; }
+    .menu-header-cta li:last-child {
+      border-right: none;
+      padding-right: 25px; }
+  .menu-header-cta a {
+    color: white;
+    font-size: 1.75em;
+    transition: 0.5s; }
+    .menu-header-cta a:hover {
+      color: #e5e5e5;
+      text-decoration: none; }
 
 .menu-header-button {
   position: absolute;
@@ -94,7 +252,7 @@ video {
     .menu-header-button .showmenu-btn:hover {
       width: 42px; }
 
-.menu-header {
+.menu-header-main {
   height: 500px;
   position: absolute;
   z-index: 2;
@@ -103,33 +261,25 @@ video {
   top: 0px;
   padding: 2% 5% 0;
   transition: 1s; }
-  .menu-header.hiddenmenu {
+  .menu-header-main.hiddenmenu {
     top: -700px;
     right: 200px;
     transform: rotate(-45deg);
     background: rgba(255, 190, 0, 0.1); }
-  .menu-header .closemenu-btn {
+  .menu-header-main .closemenu-btn {
     position: absolute;
     right: 35px;
     cursor: pointer;
     transition: 0.5s, ease-in-out; }
-    .menu-header .closemenu-btn:hover {
+    .menu-header-main .closemenu-btn:hover {
       transform: rotate(180deg); }
-  .menu-header .nav {
+  .menu-header-main .nav {
     margin-top: 50px; }
-    .menu-header .nav a {
+    .menu-header-main .nav a {
       color: #ffffff;
       transition: 1s; }
-      .menu-header .nav a:hover {
+      .menu-header-main .nav a:hover {
         color: #8b8b8b;
         background: none; }
-
-@keyframes hidden {
-  0% {
-    height: 0px;
-    display: none; }
-  100% {
-    height: 500px;
-    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

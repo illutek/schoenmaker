@@ -1,0 +1,42 @@
+//================================
+// @@ ++ Section Contactform
+//================================
+
+.section-contactform {
+  min-height: 395px;
+  background: $dark-grey;
+  margin-bottom: 0px;
+  .content-contactform {
+    h2 {
+      padding-bottom: 5px;
+    }
+    p {
+      color: #ffffff;
+      padding-bottom: 15px;
+      background: url("../images/p-line.png") no-repeat bottom center;
+    }
+  }
+}
+form {
+  input[type=text], input[type=email], textarea, input[type=submit] {
+    width: 100%;
+    border: none;
+    background: $yellow;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    // TODO om een of andere rede wordt de color van de placeholder niet gewijzigd (mixin)
+    @include placeholder {
+      font-style: normal;
+      color: #ffffff;
+      font-weight: normal;
+    }
+  }
+  textarea {}
+  input[type=submit] {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+}
+

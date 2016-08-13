@@ -1,0 +1,24 @@
+//================================
+// @@ ++ Section About Us
+//================================
+
+.section-aboutus {
+  margin-top: 50px;
+  height: 385px;
+  background: url("../images/bcg_aboutus.png") center repeat-x;
+  background-size: cover;
+  .container-aboutus {
+    height: 385px;
+    background-size: cover;
+    background: url("../images/bcg-container-aboutus.png") no-repeat;
+    .content-aboutus {
+      h2 {
+        text-align: center;
+        background: url("../images/h2-line.png") no-repeat bottom center;
+      }
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
