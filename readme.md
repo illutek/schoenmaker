@@ -10,4 +10,14 @@ default "bower_components"
 Dit verhaal gaat niet door.
 Een JavaScript oplossing toegepast om de video responsief te maken http://jsfiddle.net/bosspetta/wokoyytv/ 
 
+##Fontawesome
+Icon url toegevoegd in de css 
+```
+a:before {
+content: "\f08e";
+}
+```
+
+
+
 

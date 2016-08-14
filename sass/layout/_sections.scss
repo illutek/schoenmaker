@@ -8,7 +8,27 @@ section {
     margin: 35px 0 0;
     color: #ffffff;
   }
+
+  a {
+    &:before {
+      font-family: FontAwesome;
+      content: "\f08e";
+      display: inline-block;
+      padding-right: 3px;
+    }
+    &:hover {
+      &:before {
+        font-family: FontAwesome;
+        content: "\f14c";
+        display: inline-block;
+        padding-right: 5px;
+      }
+    }
+  }
 }
+
+
+
 
 
 

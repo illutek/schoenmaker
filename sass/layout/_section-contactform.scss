@@ -17,26 +17,5 @@
     }
   }
 }
-form {
-  input[type=text], input[type=email], textarea, input[type=submit] {
-    width: 100%;
-    border: none;
-    background: $yellow;
-    color: #ffffff;
-    padding: 10px;
-    margin-bottom: 15px;
-    // TODO om een of andere rede wordt de color van de placeholder niet gewijzigd (mixin)
-    @include placeholder {
-      font-style: normal;
-      color: #ffffff;
-      font-weight: normal;
-    }
-  }
-  textarea {}
-  input[type=submit] {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-  }
-}
+// form on _forms.scss
 

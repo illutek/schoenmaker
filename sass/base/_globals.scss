@@ -32,20 +32,7 @@ a {
   &:hover {
     color: #ffffff;
     text-decoration: none;
-    &:before {
-      font-family: FontAwesome;
-      content: "\f14c";
-      display: inline-block;
-      padding-right: 5px;
-    }
   }
-}
-
-a:before {
-  font-family: FontAwesome;
-  content: "\f08e";
-  display: inline-block;
-  padding-right: 3px;
 }
 
 video {

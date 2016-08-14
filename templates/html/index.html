@@ -11,6 +11,7 @@
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../bower_components/jquery.stellar/jquery.stellar.js"></script>
     <script src="../../bower_components/wow/dist/wow.js"></script>
+    <script>new WOW().init(); </script>
     <script src="../../js/menu.js"></script>
     <script src="../../js/core-info.js"></script>
 
@@ -21,7 +22,7 @@
 <!-- menu region are converted to includes -->
 <div class="menu-header-cta">
     <ul>
-        <li><a href="#">Contact</a></li>
+        <li><a href="page-contact.html">Contact</a></li>
         <li><a href="#">Acties</a></li>
     </ul>
 </div>
@@ -32,7 +33,7 @@
     <img class="closemenu-btn" src="../../images/menu-close-icon.png">
     <!-- menu items hard coded to the nodes -->
     <ul class="nav nav-pills nav-stacked">
-        <li><a href="#">Schoenmakerij</a></li>
+        <li><a href="page-schoenmakerij.html">Schoenmakerij</a></li>
         <li><a href="#">Sleutels</a></li>
         <li><a href="#">Gravures</a></li>
         <li><a href="#">Autoplaten</a></li>
@@ -50,7 +51,7 @@
             <h1>SCHOENHERSTELLINGEN</h1>
 
             <div class="companyname__owners">
-                <p>Ronny & Annie</p>
+                <span>Ronny & Annie</span>
             </div>
         </div>
     </div>
@@ -61,18 +62,35 @@
 </section>
 <!-- end header section -->
 
+<section class="section-aboutus wow fadeIn" data-wow-duration="2s">
+    <div class="container container-aboutus">
+        <div class="content-aboutus col-md-6">
+            <h2>Ronny & Annie</h2>
 
-<section class="container section-core-business-btn">
+            <p>Sed in sapien pellentesque, blandit lacus ac, ultrices urna. Curabitur et congue nibh, nec fermentum
+                arcu.
+                Nam semper scelerisque lacus volutpatvarius. Sed mauris erat, blandit tincidunt lectus quis, tempor
+                molestie
+                sem.Morbi tellus erat, lacinia a tincidunt non, dapibus non nibh. Cras ut lectus neque. Lorem ipsum
+                dolor
+                sit amet, consectetur adipiscing elit. Phasellusultrices vestibulum purus nec porttitor.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container section-core-business-btn wow fadeIn" data-wow-duration="2s">
     <div class="row">
         <div class="col-md-3 core">
-            <div class="circle" id="core__shoemaking">
-                <div class="core__shoemaking text-center">
-                    <img src="../../images/shoe.png">
-                    <span>Schoenmakerij</span>
-                </div>
+                <div class="circle" id="core__shoemaking">
+                    <div class="core__shoemaking text-center">
+                        <img src="../../images/shoe.png">
+                        <span>Schoenmakerij</span>
+                    </div>
 
-            </div>
+                </div>
         </div>
+
         <div class="col-md-3 core">
             <div class="circle" id="core__keys">
                 <div class="core__keys text-center">
@@ -100,7 +118,7 @@
     </div>
 </section>
 
-<section class="section-core-business-info">
+<section class="section-core-business-info wow fadeIn" data-wow-duration="2s">
     <div class="container">
         <div class="corebusinessinfo__shoemaking content" id="core__shoemakingDIV">
             <div class="corebusinessinfo">
@@ -119,11 +137,9 @@
             <div class="corebusinessinfo">
                 <h2>Sleutels</h2>
 
-                <p>Immer de grootste specialiteit van onze zaak: schoenen herstellen. Deze schoenmaker gunt uw schoenen
-                    een
-                    tijdje langer zodat u steeds verzorgd voor de dag komt. Bovendien kiest u op die manier voor een
-                    duurzaam
-                    en voordelig gebruik van uw schoenen.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet enim odio. In ultrices, quam
+                    at lacinia tincidunt, mauris mauris consectetur diam, eu elementum neque tellus nec turpis. Donec
+                    faucibus luctus volutpat. Donec condimentum neque et tellus commodo, nec aliquet arcu ullamcorper.
                 </p>
             </div>
         </div>
@@ -156,27 +172,12 @@
     </div>
 </section>
 
-<section class="section-aboutus">
-    <div class="container container-aboutus">
-        <div class="content-aboutus col-md-6">
-            <h2>Ronny & Annie</h2>
 
-            <p>Sed in sapien pellentesque, blandit lacus ac, ultrices urna. Curabitur et congue nibh, nec fermentum
-                arcu.
-                Nam semper scelerisque lacus volutpatvarius. Sed mauris erat, blandit tincidunt lectus quis, tempor
-                molestie
-                sem.Morbi tellus erat, lacinia a tincidunt non, dapibus non nibh. Cras ut lectus neque. Lorem ipsum
-                dolor
-                sit amet, consectetur adipiscing elit. Phasellusultrices vestibulum purus nec porttitor.
-            </p>
-        </div>
-    </div>
-</section>
 
 <section class="section-contact_info">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeIn" data-wow-duration="2s">
                 <div class="content-info">
                     <h2>Openingsuren</h2>
 
@@ -196,7 +197,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeIn" data-wow-duration="2s">
                 <div class="content-info">
                     <h2>Contactgegevens</h2>
 
@@ -206,7 +207,7 @@
 
                     <p>BTW: BE000000000000</p>
 
-                    <p><a href="#">Route</a></p>
+                    <p><a href="page-contact.html">Route</a></p>
                 </div>
 
             </div>
@@ -216,7 +217,7 @@
 
 <section class="section-contactform">
     <div class="container">
-        <div class="content-contactform">
+        <div class="content-contactform wow fadeIn" data-wow-duration="2s">
             <h2>Ons contacteren</h2>
 
             <p>Donec pharetra vitae enim in pharetra. Mauris at vehicula lectus. Quisque finibus risus et massa
@@ -244,7 +245,6 @@
         <div class="col-md-4">Telefoon: 0495509492</div>
         <div class="col-md-4"><a href="#">Brugstraat 13 Heusden-Zolder</a> </div>
     </div>
-
 </div>
 </footer>
 

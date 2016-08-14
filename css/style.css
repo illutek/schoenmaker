@@ -69,17 +69,6 @@ a {
   a:hover {
     color: #ffffff;
     text-decoration: none; }
-    a:hover:before {
-      font-family: FontAwesome;
-      content: "\f14c";
-      display: inline-block;
-      padding-right: 5px; }
-
-a:before {
-  font-family: FontAwesome;
-  content: "\f08e";
-  display: inline-block;
-  padding-right: 3px; }
 
 video {
   display: block; }
@@ -89,6 +78,16 @@ section {
   section h2 {
     margin: 35px 0 0;
     color: #ffffff; }
+  section a:before {
+    font-family: FontAwesome;
+    content: "\f08e";
+    display: inline-block;
+    padding-right: 3px; }
+  section a:hover:before {
+    font-family: FontAwesome;
+    content: "\f14c";
+    display: inline-block;
+    padding-right: 5px; }
 
 .section-company-name {
   position: relative;
@@ -111,10 +110,10 @@ section {
 
 .section-core-business-btn {
   position: relative;
-  height: 400px; }
+  height: 350px; }
   .section-core-business-btn .core {
     height: 250px;
-    margin-top: 110px; }
+    margin-top: 80px; }
     .section-core-business-btn .core .circle {
       position: relative;
       margin: 0 auto;
@@ -123,9 +122,12 @@ section {
       width: 200px;
       height: 200px;
       padding-top: 25px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 0.7s; }
       .section-core-business-btn .core .circle img {
         margin-bottom: 15px; }
+      .section-core-business-btn .core .circle:hover {
+        padding-top: 22px; }
 
 .section-core-business-info {
   background: #ffbe00;
@@ -184,38 +186,16 @@ section {
     padding-bottom: 15px;
     background: url("../images/p-line.png") no-repeat bottom center; }
 
-form input[type=text], form input[type=email], form textarea, form input[type=submit] {
-  width: 100%;
-  border: none;
-  background: #ffbe00;
-  color: #ffffff;
-  padding: 10px;
-  margin-bottom: 15px; }
-  form input[type=text] ::-webkit-input-placeholder, form input[type=email] ::-webkit-input-placeholder, form textarea ::-webkit-input-placeholder, form input[type=submit] ::-webkit-input-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
-  form input[type=text] :-moz-placeholder, form input[type=email] :-moz-placeholder, form textarea :-moz-placeholder, form input[type=submit] :-moz-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
-  form input[type=text] ::-moz-placeholder, form input[type=email] ::-moz-placeholder, form textarea ::-moz-placeholder, form input[type=submit] ::-moz-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
-  form input[type=text] :-ms-input-placeholder, form input[type=email] :-ms-input-placeholder, form textarea :-ms-input-placeholder, form input[type=submit] :-ms-input-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
-form input[type=submit] {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%; }
-
 footer {
   background: #ffbe00;
   color: #ffffff;
   padding: 25px 0; }
+
+.section-page {
+  background: url("../images/bcg-content-page.png") no-repeat 0% 50%;
+  min-height: 550px; }
+  .section-page h2 {
+    color: #000000; }
 
 .menu-header-cta {
   position: absolute;
@@ -281,5 +261,44 @@ footer {
       .menu-header-main .nav a:hover {
         color: #8b8b8b;
         background: none; }
+
+form input[type=text], form input[type=email], form textarea, form input[type=submit] {
+  width: 100%;
+  border: none;
+  background: #ffbe00;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px; }
+  form input[type=text] ::-webkit-input-placeholder, form input[type=email] ::-webkit-input-placeholder, form textarea ::-webkit-input-placeholder, form input[type=submit] ::-webkit-input-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+  form input[type=text] :-moz-placeholder, form input[type=email] :-moz-placeholder, form textarea :-moz-placeholder, form input[type=submit] :-moz-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+  form input[type=text] ::-moz-placeholder, form input[type=email] ::-moz-placeholder, form textarea ::-moz-placeholder, form input[type=submit] ::-moz-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+  form input[type=text] :-ms-input-placeholder, form input[type=email] :-ms-input-placeholder, form textarea :-ms-input-placeholder, form input[type=submit] :-ms-input-placeholder {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal; }
+form input[type=submit] {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: #8b8b8b;
+  transition: 0.5s; }
+  form input[type=submit]:hover {
+    color: #ffffff; }
+
+.page__content-contactform input[type=submit] {
+  height: 40px;
+  width: 100px;
+  border-radius: 0%; }
+.page__content-contactform input[type=text], .page__content-contactform input[type=email], .page__content-contactform textarea, .page__content-contactform input[type=submit] {
+  border: solid 1px #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
