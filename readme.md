@@ -18,6 +18,17 @@ content: "\f08e";
 }
 ```
 
+##WOW.js
 
 
+##SASS
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+
+###TODO
+####Contact page
+De page-contact.html zal het webform of contact form gaan bevatten in de Drupal 8 omgeving
+
+####Acties
+Titel van de actie, eventueel korte info en mogelijkheid om een pdf te downloaden met de actie.
 

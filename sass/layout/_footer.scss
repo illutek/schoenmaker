@@ -5,4 +5,30 @@ footer {
   background: $yellow;
   color: #ffffff;
   padding: 25px 0;
+  .mobilephone-mobile {
+    display: none;
+  }
+}
+
+@include mQuery(479px) {
+  footer {
+    .mobilephone-destop {
+      display: none;
+    }
+    .mobilephone-mobile {
+      display: block;
+
+      .btn-secondary {
+        width: 100%;
+        background: $dark-grey;
+        border-radius: 0%;
+        margin: 15px 0;
+        a {
+          @include url;
+          color: #ffffff;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
 }

@@ -4,11 +4,9 @@
 
 .section-aboutus {
   margin-top: 50px;
-  height: 385px;
   background: url("../images/bcg_aboutus.png") center repeat-x;
   background-size: cover;
   .container-aboutus {
-    height: 385px;
     background-size: cover;
     background: url("../images/bcg-container-aboutus.png") no-repeat;
     .content-aboutus {
@@ -19,6 +17,14 @@
       p {
         color: #ffffff;
       }
+    }
+  }
+}
+
+@include mQuery(479px) {
+  .section-aboutus {
+    .container-aboutus {
+      background: $darker-yellow;
     }
   }
 }

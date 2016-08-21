@@ -10,20 +10,13 @@ section {
   }
 
   a {
-    &:before {
-      font-family: FontAwesome;
-      content: "\f08e";
-      display: inline-block;
-      padding-right: 3px;
-    }
-    &:hover {
-      &:before {
-        font-family: FontAwesome;
-        content: "\f14c";
-        display: inline-block;
-        padding-right: 5px;
-      }
-    }
+    @include url;
+  }
+}
+
+@include mQuery(479px) {
+  h2 {
+    font-size: 1.5em;
   }
 }
 

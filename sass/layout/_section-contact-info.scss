@@ -15,3 +15,11 @@
     }
   }
 }
+
+@include mQuery(479px) {
+  .section-contact_info {
+    .content-info {
+      margin: 15px 0;
+    }
+  }
+}

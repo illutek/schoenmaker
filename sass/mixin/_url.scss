@@ -1,0 +1,21 @@
+//================================
+// @@ ++ URL Mixin
+//================================
+
+// voor de url's te voorzien van een fontawesome icon
+@mixin url {
+  &:before {
+    font-family: FontAwesome;
+    content: "\f08e";
+    display: inline-block;
+    padding-right: 3px;
+  }
+  &:hover {
+    &:before {
+      font-family: FontAwesome;
+      content: "\f14c";
+      display: inline-block;
+      padding-right: 5px;
+    }
+  }
+}

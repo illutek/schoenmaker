@@ -1,0 +1,17 @@
+//================================
+// @@ ++ Media query 479
+//================================
+
+@media only screen and (max-width: 479px) {
+  /* css code voor smartphones in portrait mode */
+
+  h1 {
+    font-size: 1.5em;
+  }
+  .section-aboutus {
+    height: 600px;
+    .container-aboutus {
+    }
+  }
+
+}

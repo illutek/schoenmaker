@@ -29,6 +29,18 @@
     }
   }
 }
+@include mQuery(479px) {
+  .menu-header-cta {
+    left: 25px;
+    li {
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+    a {
+      font-size: 1em;
+    }
+  }
+}
 
 .menu-header-button {
   position: absolute;
@@ -45,10 +57,21 @@
   }
 }
 
+@include mQuery(479px) {
+  .menu-header-button {
+    .showmenu-btn {
+      width: 28px;
+      &:hover {
+        width: 24px;
+      }
+    }
+  }
+}
+
 .menu-header-main {
   height: 500px;
   position: absolute;
-  z-index: 2;
+  z-index: 999;
   background: rgba(255, 190, 0, 1);
   right: 0px;
   top: 0px;

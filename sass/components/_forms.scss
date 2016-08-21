@@ -30,6 +30,16 @@ form {
   }
 }
 
+@include mQuery(479px) {
+  form {
+    input[type=submit]{
+      border-radius: 0%;
+      height: 50px;
+      width: 100%;
+    }
+  }
+}
+
 .page__content-contactform {
   input[type=submit] {
     height: 40px;

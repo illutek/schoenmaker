@@ -22,35 +22,56 @@
         margin-bottom: 15px;
       }
       &:hover {
-        //width: 205px;
         padding-top: 22px;
+        //lighten = sass function
+        background: lighten($yellow, 10);
       }
     }
   }
 }
 
+@include mQuery(801px) {
+  .section-core-business-btn {
+    display: none;
+  }
+}
+
+// Mixin
+
+@mixin corebusinessinfo {
+  margin-top: -21px;
+  padding-bottom: 25px;
+}
+
 .section-core-business-info {
   background: $yellow;
-  height: 380px;
+  //height: 380px;
   .corebusinessinfo {
     color: #ffffff;
     padding-top: 35px;
     text-align: center;
   }
   .corebusinessinfo__shoemaking {
-    margin-top: -21px;
+    @include corebusinessinfo;
     background: url("../images/arrow-shoe-info.png") no-repeat center top;
   }
   .corebusinessinfo__keys {
-    margin-top: -21px;
+    @include corebusinessinfo;
     background: url("../images/arrow-keys-info.png") no-repeat center top;
   }
   .corebusinessinfo__engraving {
-    margin-top: -21px;
+    @include corebusinessinfo;
     background: url("../images/arrow-engraving-info.png") no-repeat center top;
   }
   .corebusinessinfo__carplates {
-    margin-top: -21px;
+    @include corebusinessinfo;
     background: url("../images/arrow-car-info.png") no-repeat center top;
+  }
+}
+
+
+@include mQuery(801px) {
+  .section-core-business-info {
+    display: none;
   }
 }

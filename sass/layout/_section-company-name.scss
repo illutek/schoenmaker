@@ -25,3 +25,19 @@
     z-index: 110;
   }
 }
+
+@include mQuery(801px) {
+  .section-company-name {
+    height: 200px;
+    .company__name {
+      margin-top: 100px;
+      margin-left: 0%;
+      .companyname__owners {
+        font-size: 1.5em;
+      }
+    }
+    .arrow {
+      display: none;
+    }
+  }
+}
