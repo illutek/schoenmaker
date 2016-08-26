@@ -1,0 +1,32 @@
+{#
+/**
+ * Created by Stefan on 22/08/2016.
+ */
+#}
+
+ {# het menu systeem tonen menu met menu.js en css animations #}
+
+<div class="menu-header-cta">
+  <ul>
+    <li><a href="{{ base_path }}contact/ons_contacteren">Contact</a></li>
+    <li><a href="#">Acties</a></li>
+  </ul>
+</div>
+<div class="menu-header-button">
+  <img class="showmenu-btn" src="{{ base_path ~ directory }}/images/menu-show-icon.png">
+</div>
+<div class="menu-header-main">
+  <img class="closemenu-btn" src="{{ base_path ~ directory }}/images/menu-close-icon.png">
+  <!-- menu items hard coded to the nodes -->
+  <ul class="nav nav-pills nav-stacked">
+    <li><a href="{{ path('<front>') }}">{{ "Home" }}</a> </li>
+    <li><a href="{{ base_path }}schoenmakerij">{{ "Schoenmakerij" }}</a></li>
+    <li><a href="{{ base_path }}sleutels">{{ "Sleutels" }}</a></li>
+    <li><a href="{{ base_path }}gravures">{{ "Gravures" }}</a></li>
+    <li><a href="{{ base_path }}autoplaten">{{ "Autoplaten" }}</a></li>
+    <li><a href="#">{{ "Merken" }}</a></li>
+    <li><a href="{{ base_path }}lederwaren">{{ "Klein lederwaren" }}</a></li>
+    <li><a href="{{ base_path }}onderhoudsproducten">{{ "Onderhoudsproducten" }}</a></li>
+    <li><a href="#">{{ "Acties" }}</a></li>
+  </ul>
+</div>

@@ -51,8 +51,8 @@ html, body {
   font-family: "Open Sans"; }
 
 h1 {
-  font-size: 3.875em;
-  color: #ffffff; }
+  font-size: 2.875em;
+  color: #000000; }
 
 h2 {
   font-size: 2.125em;
@@ -75,16 +75,6 @@ section {
   section h2 {
     margin: 35px 0 0;
     color: #ffffff; }
-  section a:before {
-    font-family: FontAwesome;
-    content: "\f08e";
-    display: inline-block;
-    padding-right: 3px; }
-  section a:hover:before {
-    font-family: FontAwesome;
-    content: "\f14c";
-    display: inline-block;
-    padding-right: 5px; }
 
 @media screen and (max-width: 479px) {
   h2 {
@@ -97,6 +87,9 @@ section {
   .section-company-name .company__name {
     margin-top: 150px;
     margin-left: 10%; }
+    .section-company-name .company__name .company-title {
+      font-size: 3.875em;
+      color: #ffffff; }
     .section-company-name .company__name .companyname__owners {
       color: #ffffff;
       font-size: 3em; }
@@ -149,6 +142,16 @@ section {
     color: #ffffff;
     padding-top: 35px;
     text-align: center; }
+    .section-core-business-info .corebusinessinfo a:before {
+      font-family: FontAwesome;
+      content: "\f08e";
+      display: inline-block;
+      padding-right: 3px; }
+    .section-core-business-info .corebusinessinfo a:hover:before {
+      font-family: FontAwesome;
+      content: "\f14c";
+      display: inline-block;
+      padding-right: 5px; }
   .section-core-business-info .corebusinessinfo__shoemaking {
     margin-top: -21px;
     padding-bottom: 25px;
@@ -174,8 +177,8 @@ section {
   background: url("../images/bcg_aboutus.png") center repeat-x;
   background-size: cover; }
   .section-aboutus .container-aboutus {
-    background-size: cover;
-    background: url("../images/bcg-container-aboutus.png") no-repeat; }
+    background: url("../images/bcg-container-aboutus.png") no-repeat;
+    background-size: cover; }
     .section-aboutus .container-aboutus .content-aboutus h2 {
       text-align: center;
       background: url("../images/h2-line.png") no-repeat bottom center; }
@@ -324,36 +327,36 @@ footer {
         color: #8b8b8b;
         background: none; }
 
-form input[type=text], form input[type=email], form textarea, form input[type=submit] {
-  width: 100%;
+form .form-control {
   border: none;
   background: #ffbe00;
-  color: #ffffff;
-  padding: 10px;
-  margin-bottom: 15px; }
-  form input[type=text] ::-webkit-input-placeholder, form input[type=email] ::-webkit-input-placeholder, form textarea ::-webkit-input-placeholder, form input[type=submit] ::-webkit-input-placeholder {
+  color: #ffffff; }
+  form .form-control.custom__height {
+    height: 50px; }
+  form .form-control ::-webkit-input-placeholder {
     font-style: normal;
     color: #ffffff;
     font-weight: normal; }
-  form input[type=text] :-moz-placeholder, form input[type=email] :-moz-placeholder, form textarea :-moz-placeholder, form input[type=submit] :-moz-placeholder {
+  form .form-control :-moz-placeholder {
     font-style: normal;
     color: #ffffff;
     font-weight: normal; }
-  form input[type=text] ::-moz-placeholder, form input[type=email] ::-moz-placeholder, form textarea ::-moz-placeholder, form input[type=submit] ::-moz-placeholder {
+  form .form-control ::-moz-placeholder {
     font-style: normal;
     color: #ffffff;
     font-weight: normal; }
-  form input[type=text] :-ms-input-placeholder, form input[type=email] :-ms-input-placeholder, form textarea :-ms-input-placeholder, form input[type=submit] :-ms-input-placeholder {
+  form .form-control :-ms-input-placeholder {
     font-style: normal;
     color: #ffffff;
     font-weight: normal; }
-form input[type=submit] {
+form .btn-custom {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   color: #8b8b8b;
-  transition: 0.5s; }
-  form input[type=submit]:hover {
+  transition: 0.5s;
+  background: #ffbe00; }
+  form .btn-custom:hover {
     color: #ffffff; }
 
 @media screen and (max-width: 479px) {
@@ -361,12 +364,15 @@ form input[type=submit] {
     border-radius: 0%;
     height: 50px;
     width: 100%; } }
-.page__content-contactform input[type=submit] {
+.page__content-contactform .btn-custom {
   height: 40px;
   width: 100px;
-  border-radius: 0%; }
-.page__content-contactform input[type=text], .page__content-contactform input[type=email], .page__content-contactform textarea, .page__content-contactform input[type=submit] {
+  border-radius: 0;
+  background: #ffbe00;
   border: solid 1px #ffffff; }
+.page__content-contactform .form-control {
+  border: solid 1px #ffffff;
+  border-radius: 0; }
 
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
@@ -375,5 +381,17 @@ form input[type=submit] {
 
   .section-aboutus {
     height: 600px; } }
+.tabs a {
+  background-color: #ffbe00; }
+  .tabs a.is-active {
+    background-color: #8b8b8b; }
+  .tabs a:hover {
+    background-color: #bbbbbb; }
+
+h4.label {
+  color: #8b8b8b; }
+
+input#edit-preview {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

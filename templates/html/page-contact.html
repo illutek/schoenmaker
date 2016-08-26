@@ -63,21 +63,30 @@
 </section>
 
 <section class="section-page">
-<div class="container wow fadeIn" data-wow-duration="3s">
-    <div class="col-md-6 page__content-contactform">
-        <h2>Ons contacteren</h2>
-        <form>
-            <input type="text" name="naam" placeholder="Jouw naam">
-            <input type="email" name="email" placeholder="Jouw e-mail adres">
-            <textarea required="required" rows="5" placeholder="Bericht"></textarea>
-            <input type="submit" value="Verzenden">
+    <div class="container wow fadeIn" data-wow-duration="3s">
+        <div class="col-md-6 page__content-contactform">
+            <h2>Ons contacteren</h2>
 
-        </form>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="naam" placeholder="Jouw naam">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Jouw e-mail adres">
+                </div>
+                <div class="form-group">
+                    <textarea required="required" class="form-control" rows="5" placeholder="Bericht"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-custom">Verzenden</button>
+
+            </form>
+        </div>
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.031168968107!2d5.281297216095043!3d51.034045053022005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c12513e154b437%3A0x1b1016943e33be4!2sBrugstraat+3%2C+3550+Heusden-Zolder!5e0!3m2!1snl!2sbe!4v1471173704560"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.031168968107!2d5.281297216095043!3d51.034045053022005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c12513e154b437%3A0x1b1016943e33be4!2sBrugstraat+3%2C+3550+Heusden-Zolder!5e0!3m2!1snl!2sbe!4v1471173704560" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-</div>
 </section>
 <!-- end header section -->
 <footer>
@@ -90,10 +99,11 @@
                 </div>
                 <div class="mobilephone-mobile">
                     <button class="btn btn-secondary" type="button"><a href="tel:+32495509492">GSM 32495509492</a>
+                    </button>
                 </div>
 
             </div>
-            <div class="col-md-4"><a href="#">Brugstraat 13 Heusden-Zolder</a> </div>
+            <div class="col-md-4"><a href="#">Brugstraat 13 Heusden-Zolder</a></div>
         </div>
     </div>
 </footer>

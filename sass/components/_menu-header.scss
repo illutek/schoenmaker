@@ -24,11 +24,12 @@
     font-size: 1.75em;
     transition: 0.5s;
     &:hover {
-      color: $light-grey;
+      color: $light-gray;
       text-decoration: none;
     }
   }
 }
+
 @include mQuery(479px) {
   .menu-header-cta {
     left: 25px;
@@ -98,10 +99,9 @@
       color: #ffffff;
       transition: 1s;
       &:hover {
-        color: $dark-grey;
+        color: $dark-gray;
         background: none;
       }
     }
   }
 }
-

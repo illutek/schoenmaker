@@ -3,13 +3,13 @@
 //================================
 
 form {
-  input[type=text], input[type=email], textarea, input[type=submit] {
-    width: 100%;
+  .form-control {
     border: none;
     background: $yellow;
     color: #ffffff;
-    padding: 10px;
-    margin-bottom: 15px;
+    &.custom__height {
+      height: 50px;
+    }
     // TODO om een of andere rede wordt de color van de placeholder niet gewijzigd (mixin)
     @include placeholder {
       font-style: normal;
@@ -17,19 +17,21 @@ form {
       font-weight: normal;
     }
   }
-  textarea {}
-  input[type=submit] {
+
+  .btn-custom {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    color: $dark-grey;
+    color: $dark-gray;
     transition: 0.5s;
+    background: $yellow;
     &:hover {
       color: #ffffff;
     }
   }
 }
 
+// dit om de submit button niet rond te tonen mobile view
 @include mQuery(479px) {
   form {
     input[type=submit]{
@@ -41,12 +43,16 @@ form {
 }
 
 .page__content-contactform {
-  input[type=submit] {
+  // dit om de submit button niet rond te tonen op de contactpage
+  .btn-custom {
     height: 40px;
     width: 100px;
-    border-radius: 0%;
-  }
-  input[type=text], input[type=email], textarea, input[type=submit] {
+    border-radius: 0;
+    background: $yellow;
     border: solid 1px #ffffff;
+  }
+  .form-control {
+    border: solid 1px #ffffff;
+    border-radius: 0;
   }
 }

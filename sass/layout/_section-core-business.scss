@@ -50,6 +50,9 @@
     color: #ffffff;
     padding-top: 35px;
     text-align: center;
+    a {
+      @include url;
+    }
   }
   .corebusinessinfo__shoemaking {
     @include corebusinessinfo;

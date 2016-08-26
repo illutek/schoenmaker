@@ -32,3 +32,19 @@ De page-contact.html zal het webform of contact form gaan bevatten in de Drupal 
 ####Acties
 Titel van de actie, eventueel korte info en mogelijkheid om een pdf te downloaden met de actie.
 
+##Contactform opmaak
+Het default contact form gebruikt opmaken via form_alter (schoen.theme)
+Ook een eigen class toegevoegd custom__height enkel bij de input field, bij de textarea (message)
+het attributes - rows
+```
+// Name
+  $form['name']['#prefix'] = '<div class="form-group">';
+  $form['name']['#suffix'] = '</div>';
+  $form['name']['#attributes']['placeholder'][] = $form['name']['#title'].'*';
+  $form['name']['#attributes']['class'][] = 'form-control custom__height';
+  unset($form['name']['#title']);
+```
+Bron: http://drupal.stackexchange.com/questions/159154/drupal-8-theme-a-contact-form
+
+  
+

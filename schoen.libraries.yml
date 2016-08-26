@@ -1,0 +1,17 @@
+globalstyle:
+  css:
+    theme:
+      bower_components/bootstrap/dist/css/bootstrap.min.css: {}
+      bower_components/font-awesome/css/font-awesome.min.css: {}
+      bower_components/animate.css/animate.css: {}
+      css/style.css: {}
+
+globaljs:
+  js:
+    bower_components/jquery/dist/jquery.js: {}
+    bower_components/bootstrap/dist/js/bootstrap.js: {}
+    bower_components/jquery.stellar/jquery.stellar.js: {}
+    bower_components/wow/dist/wow.js: {}
+    js/menu.js: {}
+    js/core-info.js: {}
+    js/wow-init.js: {}

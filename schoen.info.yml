@@ -1,0 +1,17 @@
+name: schoen
+type: theme
+description: 'Een eigen theme voor de schoenhersteller Ronny'
+base theme: classy
+package: Custom
+core: 8.x
+version: 1.0.0
+libraries:
+  - schoen/globalstyle
+  - schoen/globaljs
+
+regions:
+  content: Content
+  schoenen: Schoenen
+  sleutel: Sleutels
+  gravures: Gravures
+  autoplaat: Autoplaten

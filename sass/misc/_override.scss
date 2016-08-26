@@ -1,0 +1,28 @@
+//=====================================
+// @@ ++ Override classy stylesheet
+//=====================================
+
+.tabs {
+  a {
+    background-color: $yellow;
+    &.is-active {
+      background-color: $dark-gray;
+    }
+    &:hover {
+      background-color: $darkgray-lighter;
+    }
+  }
+}
+
+h4 {
+  &.label {
+    color: $dark-gray;
+  }
+}
+
+// verbergen van de preview button bij het contactform (contact/ons_contacteren)
+input {
+  &#edit-preview {
+    display: none;
+  }
+}
