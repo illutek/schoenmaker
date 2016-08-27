@@ -1,0 +1,24 @@
+{
+  "name": "Schoenmaker-Ronny",
+  "version": "0.0.0",
+  "description": "Voor Ronny schoenhersteller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/illutek/schoenmaker.git"
+  },
+  "author": "Stefan",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/illutek/schoenmaker/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-plumber": "~1.1.0",
+    "gulp-sass": "~2.3.2",
+    "gulp-rename": "~1.2.2"
+  }
+}

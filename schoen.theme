@@ -25,7 +25,7 @@ function schoen_form_contact_message_ons_contacteren_form_alter(&$form,\Drupal\C
   $form['message']['#prefix'] = '<div class="form-group">';
   $form['message']['#suffix'] = '</div>';
   $form['message']['widget'][0]['value']['#attributes']['class'][] = 'form-control';
-  $form['message']['widget'][0]['value']['#attributes']['rows'][] = '3';
+  $form['message']['widget'][0]['value']['#attributes']['rows'][] = '5';
   $form['message']['widget'][0]['value']['#attributes']['placeholder'][] = $form['message']['widget'][0]['#title'].'*';
   $form['message']['widget'][0]['#title'] = '';
   unset($form['message']['widget'][0]['value']['#title']);

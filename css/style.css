@@ -4,11 +4,13 @@
   src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'open_sansbold';
   src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -79,6 +81,7 @@ section {
 @media screen and (max-width: 479px) {
   h2 {
     font-size: 1.5em; } }
+
 .section-company-name {
   position: relative;
   height: 500px;
@@ -111,6 +114,7 @@ section {
         font-size: 1.5em; }
     .section-company-name .arrow {
       display: none; } }
+
 .section-core-business-btn {
   position: relative;
   height: 350px; }
@@ -136,6 +140,7 @@ section {
 @media screen and (max-width: 801px) {
   .section-core-business-btn {
     display: none; } }
+
 .section-core-business-info {
   background: #ffbe00; }
   .section-core-business-info .corebusinessinfo {
@@ -172,6 +177,7 @@ section {
 @media screen and (max-width: 801px) {
   .section-core-business-info {
     display: none; } }
+
 .section-aboutus {
   margin-top: 50px;
   background: url("../images/bcg_aboutus.png") center repeat-x;
@@ -188,6 +194,7 @@ section {
 @media screen and (max-width: 479px) {
   .section-aboutus .container-aboutus {
     background: #cc9800; } }
+
 .section-contact_info {
   min-height: 395px;
   background: url("../images/bcg-contact-info.png") no-repeat;
@@ -202,6 +209,7 @@ section {
 @media screen and (max-width: 479px) {
   .section-contact_info .content-info {
     margin: 15px 0; } }
+
 .section-contactform {
   min-height: 395px;
   background: #8b8b8b;
@@ -243,6 +251,7 @@ footer {
           content: "\f14c";
           display: inline-block;
           padding-right: 5px; } }
+
 .section-page {
   background: url("../images/bcg-content-page.png") no-repeat 0% 50%;
   min-height: 550px; }
@@ -280,6 +289,7 @@ footer {
       margin-right: 10px; }
     .menu-header-cta a {
       font-size: 1em; } }
+
 .menu-header-button {
   position: absolute;
   z-index: 1;
@@ -297,6 +307,7 @@ footer {
     width: 28px; }
     .menu-header-button .showmenu-btn:hover {
       width: 24px; } }
+
 .menu-header-main {
   height: 500px;
   position: absolute;
@@ -333,22 +344,7 @@ form .form-control {
   color: #ffffff; }
   form .form-control.custom__height {
     height: 50px; }
-  form .form-control ::-webkit-input-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
-  form .form-control :-moz-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
-  form .form-control ::-moz-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
-  form .form-control :-ms-input-placeholder {
-    font-style: normal;
-    color: #ffffff;
-    font-weight: normal; }
+
 form .btn-custom {
   height: 100px;
   width: 100px;
@@ -364,12 +360,14 @@ form .btn-custom {
     border-radius: 0%;
     height: 50px;
     width: 100%; } }
+
 .page__content-contactform .btn-custom {
   height: 40px;
   width: 100px;
   border-radius: 0;
   background: #ffbe00;
   border: solid 1px #ffffff; }
+
 .page__content-contactform .form-control {
   border: solid 1px #ffffff;
   border-radius: 0; }
@@ -378,9 +376,9 @@ form .btn-custom {
   /* css code voor smartphones in portrait mode */
   h1 {
     font-size: 1.5em; }
-
   .section-aboutus {
     height: 600px; } }
+
 .tabs a {
   background-color: #ffbe00; }
   .tabs a.is-active {
@@ -393,5 +391,3 @@ h4.label {
 
 input#edit-preview {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */
