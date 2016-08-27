@@ -211,7 +211,7 @@ section {
     margin: 15px 0; } }
 
 .section-contactform {
-  min-height: 395px;
+  min-height: 295px;
   background: #8b8b8b;
   margin-bottom: 0px; }
   .section-contactform .content-contactform h2 {
@@ -338,28 +338,34 @@ footer {
         color: #8b8b8b;
         background: none; }
 
-form .form-control {
+.content-contactform .form-control {
   border: none;
   background: #ffbe00;
-  color: #ffffff; }
-  form .form-control.custom__height {
+  color: #ffffff;
+  border-radius: 0; }
+  .content-contactform .form-control.custom__height {
     height: 50px; }
+  .content-contactform .form-control:first-child {
+    margin-bottom: 30px; }
 
-form .btn-custom {
+.content-contactform .btn-custom {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   color: #8b8b8b;
   transition: 0.5s;
   background: #ffbe00; }
-  form .btn-custom:hover {
+  .content-contactform .btn-custom:hover {
     color: #ffffff; }
 
-@media screen and (max-width: 479px) {
-  form input[type=submit] {
-    border-radius: 0%;
-    height: 50px;
-    width: 100%; } }
+.page__content-contactform .form-control {
+  border: none;
+  background: #ffbe00;
+  color: #ffffff;
+  border-radius: 0;
+  border: solid 1px #ffffff; }
+  .page__content-contactform .form-control.custom__height {
+    height: 50px; }
 
 .page__content-contactform .btn-custom {
   height: 40px;
@@ -368,9 +374,11 @@ form .btn-custom {
   background: #ffbe00;
   border: solid 1px #ffffff; }
 
-.page__content-contactform .form-control {
-  border: solid 1px #ffffff;
-  border-radius: 0; }
+@media screen and (max-width: 479px) {
+  form input[type=submit] {
+    border-radius: 0%;
+    height: 50px;
+    width: 100%; } }
 
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */

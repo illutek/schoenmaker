@@ -2,19 +2,28 @@
 // @@ ++ Forms
 //================================
 
-form {
+@mixin form__control {
+  border: none;
+  background: $yellow;
+  color: #ffffff;
+  border-radius: 0;
+  &.custom__height {
+    height: 50px;
+  }
+}
+// ///////////////////////////////////////////////////////
+// De contact block op de home pagina in de footer
+// ///////////////////////////////////////////////////////
+
+.content-contactform {
   .form-control {
-    border: none;
-    background: $yellow;
-    color: #ffffff;
-    &.custom__height {
-      height: 50px;
+    @include form__control;
+    &:first-child {
+      margin-bottom: 30px;
     }
     // TODO om een of andere rede wordt de color van de placeholder niet gewijzigd (mixin)
     // TODO gaan dit met Bootstrap uitvoeren
-
   }
-
   .btn-custom {
     height: 100px;
     width: 100px;
@@ -28,6 +37,27 @@ form {
   }
 }
 
+
+
+// ///////////////////////////////////////////////////////
+// Contactformulier op de pagina page--contact.html.twig
+// ///////////////////////////////////////////////////////
+
+.page__content-contactform {
+  .form-control {
+    @include form__control;
+    border: solid 1px #ffffff;
+  }
+  // dit om de submit button niet rond te tonen
+  .btn-custom {
+    height: 40px;
+    width: 100px;
+    border-radius: 0;
+    background: $yellow;
+    border: solid 1px #ffffff;
+  }
+}
+
 // dit om de submit button niet rond te tonen mobile view
 @include mQuery(479px) {
   form {
@@ -36,20 +66,5 @@ form {
       height: 50px;
       width: 100%;
     }
-  }
-}
-
-.page__content-contactform {
-  // dit om de submit button niet rond te tonen op de contactpage
-  .btn-custom {
-    height: 40px;
-    width: 100px;
-    border-radius: 0;
-    background: $yellow;
-    border: solid 1px #ffffff;
-  }
-  .form-control {
-    border: solid 1px #ffffff;
-    border-radius: 0;
   }
 }
