@@ -37,7 +37,7 @@ function schoen_form_contact_message_ons_contacteren_form_alter(&$form,\Drupal\C
 
 function schoen_form_contact_message_contacteren_form_alter(&$form,\Drupal\Core\Form\FormStateInterface $form_state, $form_id){
   // Name
-  $form['name']['#prefix'] = '<div class="row"><div class="col-md-5"><div class="form-group">';
+  $form['name']['#prefix'] = '<div class="row"><div class="col-sm-5"><div class="form-group">';
   $form['name']['#suffix'] = '</div>';
   $form['name']['#attributes']['placeholder'][] = $form['name']['#title'].'*';
   $form['name']['#attributes']['class'][] = 'form-control custom__height';
@@ -57,11 +57,11 @@ function schoen_form_contact_message_contacteren_form_alter(&$form,\Drupal\Core\
   $form['message']['widget'][0]['value']['#attributes']['placeholder'][] = $form['message']['widget'][0]['#title'].'*';
   $form['message']['widget'][0]['#title'] = '';
   unset($form['message']['widget'][0]['value']['#title']);
-  $form['message']['widget'][0]['#prefix'] = '<div class="col-md-5"><div class="form-group">';
+  $form['message']['widget'][0]['#prefix'] = '<div class="col-sm-5"><div class="form-group">';
   $form['message']['widget'][0]['#suffix'] = '</div></div>';
 
   // Submit
-  $form['actions']['#prefix'] = '<div class="col-md-2">';
+  $form['actions']['#prefix'] = '<div class="col-sm-2">';
   $form['actions']['#suffix'] = '</div></div>';
   $form['actions']['submit']['#attributes']['class'][] = 'btn';
   $form['actions']['submit']['#attributes']['class'][] = 'btn-custom';

@@ -342,7 +342,10 @@ footer {
   border: none;
   background: #ffbe00;
   color: #ffffff;
-  border-radius: 0; }
+  border-radius: 0;
+  transition: 0.5s; }
+  .content-contactform .form-control:hover {
+    background: #ffcb33; }
   .content-contactform .form-control.custom__height {
     height: 50px; }
   .content-contactform .form-control:first-child {
@@ -354,16 +357,21 @@ footer {
   border-radius: 50%;
   color: #8b8b8b;
   transition: 0.5s;
-  background: #ffbe00; }
+  background: #ffbe00;
+  transition: 0.5s; }
   .content-contactform .btn-custom:hover {
-    color: #ffffff; }
+    color: #ffffff;
+    background: #ffcb33; }
 
 .page__content-contactform .form-control {
   border: none;
   background: #ffbe00;
   color: #ffffff;
   border-radius: 0;
+  transition: 0.5s;
   border: solid 1px #ffffff; }
+  .page__content-contactform .form-control:hover {
+    background: #ffcb33; }
   .page__content-contactform .form-control.custom__height {
     height: 50px; }
 
@@ -375,7 +383,7 @@ footer {
   border: solid 1px #ffffff; }
 
 @media screen and (max-width: 479px) {
-  form input[type=submit] {
+  .content-contactform input[type=submit] {
     border-radius: 0%;
     height: 50px;
     width: 100%; } }
