@@ -57,18 +57,26 @@
   {# end Header section #}
 
   {# #}
-  <section class="section-aboutus wow fadeIn" data-wow-duration="3s">
-    <div class="container container-aboutus">
-      <div class="content-aboutus col-md-6">
-        <main role="main">
+  <section class="section-main-actions wow fadeIn" data-wow-duration="3s">
+    <div class="container main-actions__container">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6 actions">
+          <div class="actions__content">
+            {# TODO actions to Drupal #}
+            <h2>Actie autoplaten</h2>
+            <p>Tot einde september 10% korting op autoplaten, dit om de lancering van onze site te vieren.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-pull-6 main-content">
+          <main role="main">
+            <div class="layout-content">
+              {{ page.content }}
+            </div>{# /.layout-content #}
+          </main>
+        </div>
 
-          <div class="layout-content">
-            {{ page.content }}
-          </div>{# /.layout-content #}
-
-        </main>
-      </div>
-    </div>
+      </div> {# /.end row #}
+    </div>{# end /container #}
   </section>
 
   <section class="container section-core-business-btn wow fadeIn" data-wow-duration="3s">

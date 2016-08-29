@@ -184,24 +184,30 @@ section {
   .section-core-business-info {
     display: none; } }
 
-.section-aboutus {
+.section-main-actions {
   margin-top: 50px;
   background: url("../images/bcg_aboutus.png") center repeat-x;
   background-size: cover; }
-  .section-aboutus .container-aboutus {
+  .section-main-actions .main-actions__container {
     background: url("../images/bcg-container-aboutus.png") no-repeat;
     background-size: cover; }
-    .section-aboutus .container-aboutus .content-aboutus h2 {
+    .section-main-actions .main-actions__container h2 {
       text-align: center;
       background: url("../images/h2-line.png") no-repeat bottom center; }
-    .section-aboutus .container-aboutus .content-aboutus p {
+    .section-main-actions .main-actions__container p {
       color: #ffffff; }
 
 @media screen and (max-width: 479px) {
-  .section-aboutus {
+  .section-main-actions {
     background: none; }
-    .section-aboutus .container-aboutus {
+    .section-main-actions .main-actions__container {
       background: #cc9800; } }
+
+.actions {
+  margin-top: 15px; }
+  .actions .actions__content {
+    padding: 0 15px;
+    border: solid 1px #ffbe00; }
 
 .section-contact_info {
   min-height: 395px;
