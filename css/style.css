@@ -79,16 +79,18 @@ section {
     color: #ffffff; }
 
 @media screen and (max-width: 479px) {
-  h2 {
-    font-size: 1.5em; } }
+  section {
+    margin-bottom: 0; }
+    section h2 {
+      font-size: 1.5em; } }
 
 .section-company-name {
   position: relative;
-  height: 500px;
+  height: 300px;
   background: url("../images/header_bcg.jpg") no-repeat;
   background-size: cover; }
   .section-company-name .company__name {
-    margin-top: 150px;
+    margin-top: 80px;
     margin-left: 10%; }
     .section-company-name .company__name .company-title {
       font-size: 3.875em;
@@ -104,16 +106,20 @@ section {
     width: 6%;
     z-index: 110; }
 
+@media screen and (max-width: 479px) {
+  .section-company-name .company__name .company-title {
+    font-size: 1.5em; }
+  .section-company-name .company__name .companyname__owners {
+    font-size: 1.5em; } }
+
 @media screen and (max-width: 801px) {
   .section-company-name {
     height: 200px; }
     .section-company-name .company__name {
       margin-top: 100px;
       margin-left: 0%; }
-      .section-company-name .company__name .companyname__owners {
-        font-size: 1.5em; }
-    .section-company-name .arrow {
-      display: none; } }
+      .section-company-name .company__name .company-title {
+        font-size: 1.5em; } }
 
 .section-core-business-btn {
   position: relative;
@@ -192,8 +198,10 @@ section {
       color: #ffffff; }
 
 @media screen and (max-width: 479px) {
-  .section-aboutus .container-aboutus {
-    background: #cc9800; } }
+  .section-aboutus {
+    background: none; }
+    .section-aboutus .container-aboutus {
+      background: #cc9800; } }
 
 .section-contact_info {
   min-height: 395px;
@@ -205,6 +213,16 @@ section {
     .section-contact_info .content-info h2 {
       background: url("../images/h2-line.png") no-repeat bottom center;
       padding-left: 15px; }
+    .section-contact_info .content-info a:before {
+      font-family: FontAwesome;
+      content: "\f08e";
+      display: inline-block;
+      padding-right: 3px; }
+    .section-contact_info .content-info a:hover:before {
+      font-family: FontAwesome;
+      content: "\f14c";
+      display: inline-block;
+      padding-right: 5px; }
 
 @media screen and (max-width: 479px) {
   .section-contact_info .content-info {
@@ -290,26 +308,8 @@ footer {
     .menu-header-cta a {
       font-size: 1em; } }
 
-.menu-header-button {
-  position: absolute;
-  z-index: 1;
-  right: 35px; }
-  .menu-header-button .showmenu-btn {
-    width: 48px;
-    margin: 35px 0;
-    cursor: pointer;
-    transition: 0.5s; }
-    .menu-header-button .showmenu-btn:hover {
-      width: 42px; }
-
-@media screen and (max-width: 479px) {
-  .menu-header-button .showmenu-btn {
-    width: 28px; }
-    .menu-header-button .showmenu-btn:hover {
-      width: 24px; } }
-
 .menu-header-main {
-  height: 500px;
+  height: 100%;
   position: absolute;
   z-index: 999;
   background: #ffbe00;
@@ -318,8 +318,8 @@ footer {
   padding: 2% 5% 0;
   transition: 1s; }
   .menu-header-main.hiddenmenu {
-    top: -700px;
-    right: 200px;
+    top: -1200px;
+    right: 400px;
     transform: rotate(-45deg);
     background: rgba(255, 190, 0, 0.1); }
   .menu-header-main .closemenu-btn {
@@ -338,6 +338,24 @@ footer {
         color: #8b8b8b;
         background: none; }
 
+.menu-header-button {
+  position: absolute;
+  z-index: 1;
+  right: 35px; }
+  .menu-header-button .showmenu-btn {
+    width: 48px;
+    margin: 35px 0;
+    cursor: pointer;
+    transition: 0.5s; }
+    .menu-header-button .showmenu-btn:hover {
+      width: 42px; }
+
+@media screen and (max-width: 479px) {
+  .menu-header-button .showmenu-btn {
+    width: 28px; }
+    .menu-header-button .showmenu-btn:hover {
+      width: 24px; } }
+
 .content-contactform .form-control {
   border: none;
   background: #ffbe00;
@@ -348,6 +366,8 @@ footer {
     background: #ffcb33; }
   .content-contactform .form-control.custom__height {
     height: 50px; }
+  .content-contactform .form-control.height__textarea {
+    height: 130px; }
   .content-contactform .form-control:first-child {
     margin-bottom: 30px; }
 
@@ -373,6 +393,8 @@ footer {
     background: #ffcb33; }
   .page__content-contactform .form-control.custom__height {
     height: 50px; }
+  .page__content-contactform .form-control.height__textarea {
+    height: 130px; }
 
 .page__content-contactform .btn-custom {
   height: 40px;

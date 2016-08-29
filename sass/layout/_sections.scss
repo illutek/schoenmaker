@@ -8,16 +8,16 @@ section {
     margin: 35px 0 0;
     color: #ffffff;
   }
-
-  a {
-    //@include url;
-  }
 }
 
 @include mQuery(479px) {
-  h2 {
-    font-size: 1.5em;
+  section {
+    margin-bottom: 0;
+    h2 {
+      font-size: 1.5em;
+    }
   }
+
 }
 
 

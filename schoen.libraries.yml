@@ -15,3 +15,5 @@ globaljs:
     js/menu.js: {}
     js/core-info.js: {}
     js/wow-init.js: {}
+  dependencies:
+    - core/jquery

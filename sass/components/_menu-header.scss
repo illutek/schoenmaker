@@ -43,6 +43,46 @@
   }
 }
 
+// ///////////////////////////////////
+// Main menu
+// //////////////////////////////////
+.menu-header-main {
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  background: rgba(255, 190, 0, 1);
+  right: 0px;
+  top: 0px;
+  padding: 2% 5% 0;
+  transition: 1s;
+  &.hiddenmenu {
+    top: -1200px;
+    right: 400px;
+    transform: rotate(-45deg);
+    background: rgba(255, 190, 0, 0.1);
+  }
+  .closemenu-btn {
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+    transition: 0.5s, ease-in-out;
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+  .nav {
+    margin-top: 50px;
+    a {
+      color: #ffffff;
+      transition: 1s;
+      &:hover {
+        color: $dark-gray;
+        background: none;
+      }
+    }
+  }
+}
+
 .menu-header-button {
   position: absolute;
   z-index: 1;
@@ -64,43 +104,6 @@
       width: 28px;
       &:hover {
         width: 24px;
-      }
-    }
-  }
-}
-
-.menu-header-main {
-  height: 500px;
-  position: absolute;
-  z-index: 999;
-  background: rgba(255, 190, 0, 1);
-  right: 0px;
-  top: 0px;
-  padding: 2% 5% 0;
-  transition: 1s;
-  &.hiddenmenu {
-    top: -700px;
-    right: 200px;
-    transform: rotate(-45deg);
-    background: rgba(255, 190, 0, 0.1);
-  }
-  .closemenu-btn {
-    position: absolute;
-    right: 35px;
-    cursor: pointer;
-    transition: 0.5s, ease-in-out;
-    &:hover {
-      transform: rotate(180deg);
-    }
-  }
-  .nav {
-    margin-top: 50px;
-    a {
-      color: #ffffff;
-      transition: 1s;
-      &:hover {
-        color: $dark-gray;
-        background: none;
       }
     }
   }

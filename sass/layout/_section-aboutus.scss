@@ -23,6 +23,7 @@
 
 @include mQuery(479px) {
   .section-aboutus {
+    background: none;
     .container-aboutus {
       background: $darker-yellow;
     }

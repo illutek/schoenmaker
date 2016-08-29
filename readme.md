@@ -11,10 +11,23 @@ Dit verhaal gaat niet door.
 Een JavaScript oplossing toegepast om de video responsief te maken http://jsfiddle.net/bosspetta/wokoyytv/ 
 
 ##Fontawesome
-Icon url toegevoegd in de css 
+Icon url toegevoegd in de scss via een mixin
 ```
-a:before {
-content: "\f08e";
+@mixin url {
+  &:before {
+    font-family: FontAwesome;
+    content: "\f08e";
+    display: inline-block;
+    padding-right: 3px;
+  }
+  &:hover {
+    &:before {
+      font-family: FontAwesome;
+      content: "\f14c";
+      display: inline-block;
+      padding-right: 5px;
+    }
+  }
 }
 ```
 
@@ -45,6 +58,11 @@ het attributes - rows
   unset($form['name']['#title']);
 ```
 Bron: http://drupal.stackexchange.com/questions/159154/drupal-8-theme-a-contact-form
+
+###BEM
+Notatie wel gebruikt maar niet echt volgens de regels ga dit bij een volgende beter moeten doen.
+Bron: 
+http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
   
 

@@ -7,6 +7,9 @@
  */
 
 function schoen_form_contact_message_ons_contacteren_form_alter(&$form,\Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+  /**
+   * Dit om het form (contact_message_ons_contacteren) op page--contact.html.twig te lay-outen
+   */
   // Name
   $form['name']['#prefix'] = '<div class="form-group">';
   $form['name']['#suffix'] = '</div>';
@@ -36,6 +39,9 @@ function schoen_form_contact_message_ons_contacteren_form_alter(&$form,\Drupal\C
 }
 
 function schoen_form_contact_message_contacteren_form_alter(&$form,\Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+  /**
+   * Dit om het form (contact_message_contacteren) in de block op de homepage te lay-outen
+   */
   // Name
   $form['name']['#prefix'] = '<div class="row"><div class="col-sm-5"><div class="form-group">';
   $form['name']['#suffix'] = '</div>';
@@ -52,7 +58,8 @@ function schoen_form_contact_message_contacteren_form_alter(&$form,\Drupal\Core\
 
 
   // Message
-  $form['message']['widget'][0]['value']['#attributes']['class'][] = 'form-control';
+  // rows=5 hoogte is in verschillende browsers niet gelijk daarom een extra class 'height__textarea'
+  $form['message']['widget'][0]['value']['#attributes']['class'][] = 'form-control height__textarea';
   $form['message']['widget'][0]['value']['#attributes']['rows'][] = '5';
   $form['message']['widget'][0]['value']['#attributes']['placeholder'][] = $form['message']['widget'][0]['#title'].'*';
   $form['message']['widget'][0]['#title'] = '';

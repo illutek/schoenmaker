@@ -76,7 +76,7 @@
       <div class="col-sm-3 core">
         <div class="circle" id="core__shoemaking">
           <div class="core__shoemaking text-center">
-            <img src="{{ base_path ~ directory }}/images/shoe.png">
+            <img src="{{ base_path ~ directory }}/images/shoe.png" alt="schoen icon">
             <span>Schoenmakerij</span>
           </div>
         </div>
@@ -86,7 +86,7 @@
       <div class="col-sm-3 core">
         <div class="circle" id="core__keys">
           <div class="core__keys text-center">
-            <img src="{{ base_path ~ directory }}/images/keys.png">
+            <img src="{{ base_path ~ directory }}/images/keys.png" alt="key icon">
             <span>Sleutels</span>
           </div>
         </div>
@@ -94,7 +94,7 @@
       <div class="col-sm-3 core">
         <div class="circle" id="core__engraving">
           <div class="core__engraving text-center">
-            <img src="{{ base_path ~ directory }}/images/engraving.png">
+            <img src="{{ base_path ~ directory }}/images/engraving.png" alt="gravures icon">
             <span>Gravures</span>
           </div>
         </div>
@@ -102,7 +102,7 @@
       <div class="col-sm-3 core">
         <div class="circle" id="core__carplates">
           <div class="core__carplates text-center">
-            <img src="{{ base_path ~ directory }}/images/car.png">
+            <img src="{{ base_path ~ directory }}/images/car.png" alt="auto icon">
             <span>Autoplaten</span>
           </div>
         </div>
@@ -147,33 +147,17 @@
       <div class="row">
         <div class="col-md-6 wow fadeIn" data-wow-duration="3s">
           <div class="content-info">
-            <h2>Openingsuren</h2>
-
-            <p>Maandag: Gesloten</p>
-
-            <p>Dinsdag: 08:30 - 12:00 / 13:00- 18:00</p>
-
-            <p>Woensdag: 08:30 - 12:00 / 13:00- 18:00</p>
-
-            <p>Donderdag: Gesloten</p>
-
-            <p>Vrijdag: 08:30 - 12:00 / 13:00- 18:00</p>
-
-            <p>Zaterdag: 08:30 - 12:00 / 13:00- 17:00</p>
-
-            <p>Zondag: Gesloten</p>
+            {{ page.openingsuren }}
           </div>
         </div>
 
         <div class="col-md-6 wow fadeIn" data-wow-duration="3s">
           <div class="content-info">
             <h2>Contactgegevens</h2>
-
-            <p>Brugstraat 13 Heusden-Zolder</p>
-
+            <p>Brugstraat 13</p>
+            <p>3550 Heusden-Zolder</p>
             <p>Telefoon: 0495509492</p>
-
-            <p><a href="page-contact.html">Route</a></p>
+            <p><a href="{{ base_path }}contact/ons_contacteren">Route</a></p>
           </div>
 
         </div>

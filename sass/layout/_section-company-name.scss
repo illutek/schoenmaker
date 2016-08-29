@@ -4,11 +4,11 @@
 
 .section-company-name {
   position: relative;
-  height: 500px;
+  height: 300px;
   background: url("../images/header_bcg.jpg") no-repeat;
   background-size: cover;
   .company__name {
-    margin-top: 150px;
+    margin-top: 80px;
     margin-left: 10%;
     .company-title {
       font-size: 3.875em;
@@ -29,18 +29,28 @@
   }
 }
 
+@include mQuery(479px) {
+  .section-company-name {
+    .company__name {
+      .company-title {
+        font-size: 1.5em;
+      }
+      .companyname__owners {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
 @include mQuery(801px) {
   .section-company-name {
     height: 200px;
     .company__name {
       margin-top: 100px;
       margin-left: 0%;
-      .companyname__owners {
+      .company-title {
         font-size: 1.5em;
       }
-    }
-    .arrow {
-      display: none;
     }
   }
 }

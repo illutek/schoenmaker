@@ -13,6 +13,9 @@
       background: url("../images/h2-line.png") no-repeat bottom center;
       padding-left: 15px;
     }
+    a {
+      @include url;
+    }
   }
 }
 
