@@ -51,7 +51,7 @@
   height: 100%;
   position: absolute;
   z-index: 999;
-  background: rgba(255, 190, 0, 0.1);
+  background: rgba(162,103,69, 0.1);
   top: -2000px;
   right: 0;
   transform: rotate(-90deg);
@@ -63,7 +63,7 @@
     right: 0px;
     top: 0px;
     transform: rotate(0deg);
-    background: rgba(255, 190, 0, 0.9);
+    background: rgba(162,103,69, 0.9);
   }
   .closemenu-btn {
     position: absolute;
@@ -82,7 +82,7 @@
       color: #ffffff;
       transition: 1s;
       &:hover {
-        color: $dark-gray;
+        color: $light-gray;
         background: none;
       }
     }

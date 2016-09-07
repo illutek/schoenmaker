@@ -87,7 +87,7 @@ section {
 .section-company-name {
   position: relative;
   height: 300px;
-  background: url("../images/header_bcg.jpg") no-repeat;
+  background: url("../images/header_bcg-cognac.png") no-repeat;
   background-size: cover; }
   .section-company-name .company__name {
     margin-top: 80px;
@@ -124,7 +124,7 @@ section {
       position: relative;
       margin: 0 auto;
       border-radius: 50%;
-      background: #ffbe00;
+      background: #a26745;
       width: 200px;
       height: 200px;
       padding-top: 25px;
@@ -134,14 +134,14 @@ section {
         margin-bottom: 15px; }
       .section-core-business-btn .core .circle:hover {
         padding-top: 22px;
-        background: #ffcb33; }
+        background: #bb815f; }
 
 @media screen and (max-width: 801px) {
   .section-core-business-btn {
     display: none; } }
 
 .section-core-business-info {
-  background: #ffbe00; }
+  background: #a26745; }
   .section-core-business-info .corebusinessinfo {
     color: #ffffff;
     padding-top: 35px;
@@ -159,19 +159,19 @@ section {
   .section-core-business-info .corebusinessinfo__shoemaking {
     margin-top: -21px;
     padding-bottom: 25px;
-    background: url("../images/arrow-shoe-info.png") no-repeat center top; }
+    background: url("../images/arrow-shoe-info-cognac.png") no-repeat center top; }
   .section-core-business-info .corebusinessinfo__keys {
     margin-top: -21px;
     padding-bottom: 25px;
-    background: url("../images/arrow-keys-info.png") no-repeat center top; }
+    background: url("../images/arrow-keys-info-cognac.png") no-repeat center top; }
   .section-core-business-info .corebusinessinfo__engraving {
     margin-top: -21px;
     padding-bottom: 25px;
-    background: url("../images/arrow-engraving-info.png") no-repeat center top; }
+    background: url("../images/arrow-engraving-info-cognac.png") no-repeat center top; }
   .section-core-business-info .corebusinessinfo__carplates {
     margin-top: -21px;
     padding-bottom: 25px;
-    background: url("../images/arrow-car-info.png") no-repeat center top; }
+    background: url("../images/arrow-car-info-cognac.png") no-repeat center top; }
 
 @media screen and (max-width: 801px) {
   .section-core-business-info {
@@ -179,10 +179,10 @@ section {
 
 .section-main-actions {
   margin-top: 50px;
-  background: url("../images/bcg_aboutus.png") center repeat-x;
+  background: url("../images/bcg_aboutus-cognac.png") center repeat-x;
   background-size: cover; }
   .section-main-actions .main-actions__container {
-    background: url("../images/bcg-container-aboutus.png") no-repeat;
+    background: url("../images/bcg-container-aboutus-cognac.png") no-repeat;
     background-size: cover; }
     .section-main-actions .main-actions__container h2 {
       text-align: center;
@@ -253,7 +253,7 @@ section {
     background: url("../images/p-line.png") no-repeat bottom center; }
 
 footer {
-  background: #ffbe00;
+  background: #a26745;
   color: #ffffff;
   padding: 25px 0; }
   footer .mobilephone-mobile {
@@ -284,7 +284,7 @@ footer {
           padding-right: 5px; } }
 
 .section-page {
-  background: url("../images/bcg-content-page.png") no-repeat 0% 50%;
+  background: url("../images/bcg-content-page-cognac.png") no-repeat 0% 50%;
   min-height: 550px; }
   .section-page h2 {
     color: #000000; }
@@ -326,7 +326,7 @@ footer {
   height: 100%;
   position: absolute;
   z-index: 999;
-  background: rgba(255, 190, 0, 0.1);
+  background: rgba(162, 103, 69, 0.1);
   top: -2000px;
   right: 0;
   transform: rotate(-90deg);
@@ -338,7 +338,7 @@ footer {
     right: 0px;
     top: 0px;
     transform: rotate(0deg);
-    background: rgba(255, 190, 0, 0.9); }
+    background: rgba(162, 103, 69, 0.9); }
   .menu-header-main .closemenu-btn {
     position: absolute;
     right: 35px;
@@ -354,7 +354,7 @@ footer {
       color: #ffffff;
       transition: 1s; }
       .menu-header-main .nav a:hover {
-        color: #8b8b8b;
+        color: #e5e5e5;
         background: none; }
 
 .menu-header-button {
@@ -377,12 +377,12 @@ footer {
 
 .content-contactform .form-control {
   border: none;
-  background: #ffbe00;
+  background: #a26745;
   color: #ffffff;
   border-radius: 0;
   transition: 0.5s; }
   .content-contactform .form-control:hover {
-    background: #ffcb33; }
+    background: #bb815f; }
   .content-contactform .form-control.custom__height {
     height: 50px; }
   .content-contactform .form-control.height__textarea {
@@ -395,21 +395,21 @@ footer {
   width: 100px;
   border-radius: 50%;
   color: #8b8b8b;
-  background: #ffbe00;
+  background: #a26745;
   transition: 0.5s; }
   .content-contactform .btn-custom:hover {
     color: #ffffff;
-    background: #ffcb33; }
+    background: #bb815f; }
 
 .page__content-contactform .form-control {
   border: none;
-  background: #ffbe00;
+  background: #a26745;
   color: #ffffff;
   border-radius: 0;
   transition: 0.5s;
   border: solid 1px #ffffff; }
   .page__content-contactform .form-control:hover {
-    background: #ffcb33; }
+    background: #bb815f; }
   .page__content-contactform .form-control.custom__height {
     height: 50px; }
   .page__content-contactform .form-control.height__textarea {
@@ -419,7 +419,7 @@ footer {
   height: 40px;
   width: 100px;
   border-radius: 0;
-  background: #ffbe00;
+  background: #a26745;
   border: solid 1px #ffffff; }
 
 @media screen and (max-width: 479px) {
