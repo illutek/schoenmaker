@@ -47,20 +47,23 @@
 // Main menu
 // //////////////////////////////////
 .menu-header-main {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  top: -2000px;
+  right: 400px;
+  transition: 1s;
   z-index: 999;
   background: rgba(255, 190, 0, 0.9);
-  right: 0px;
-  top: 0px;
-  padding: 2% 5% 0;
-  transition: 1s;
-  &.hiddenmenu {
-    top: -2000px;
-    right: 400px;
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  &.showmenu {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 2% 5% 0;
+
     background: rgba(255, 190, 0, 0.1);
+
   }
   .closemenu-btn {
     position: absolute;

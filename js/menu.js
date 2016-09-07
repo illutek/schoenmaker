@@ -3,15 +3,15 @@
  */
 $(document).ready(function () {
  // when loading the page menu hide
-    $('.menu-header-main').addClass('hiddenmenu');
+    //$('.menu-header-main').addClass('showmenu');
 
     $('.showmenu-btn').click(function(){
         $(this).hide();
-        $('.menu-header-main').toggleClass('hiddenmenu');
+        $('.menu-header-main').toggleClass('showmenu');
     });
 
     $('.closemenu-btn').click(function(){
-        $('.menu-header-main').toggleClass('hiddenmenu');
+        $('.menu-header-main').toggleClass('showmenu');
         $('.showmenu-btn').show();
     });
 });
