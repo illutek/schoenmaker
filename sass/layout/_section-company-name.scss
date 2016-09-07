@@ -19,14 +19,6 @@
       font-size: 3em;
     }
   }
-  .arrow {
-    position: absolute;
-    bottom: 20px;
-    left: 47%;
-    right: 47%;
-    width: 6%;
-    z-index: 110;
-  }
 }
 
 @include mQuery(479px) {

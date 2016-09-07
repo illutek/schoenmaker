@@ -98,13 +98,6 @@ section {
     .section-company-name .company__name .companyname__owners {
       color: #ffffff;
       font-size: 3em; }
-  .section-company-name .arrow {
-    position: absolute;
-    bottom: 20px;
-    left: 47%;
-    right: 47%;
-    width: 6%;
-    z-index: 110; }
 
 @media screen and (max-width: 479px) {
   .section-company-name .company__name .company-title {
@@ -206,15 +199,29 @@ section {
 .actions {
   margin-top: 15px; }
   .actions .actions__content {
-    padding: 0 15px;
-    border: solid 1px #ffbe00; }
+    padding: 0 15px 15px 15px;
+    border: solid 1px #ffffff;
+    background: url("../images/bcg_actions_gray.png") repeat;
+    transition: 0.7s; }
+    .actions .actions__content:hover {
+      background: #8b8b8b; }
+    .actions .actions__content a:before {
+      font-family: FontAwesome;
+      content: "\f08e";
+      display: inline-block;
+      padding-right: 3px; }
+    .actions .actions__content a:hover:before {
+      font-family: FontAwesome;
+      content: "\f14c";
+      display: inline-block;
+      padding-right: 5px; }
 
 .section-contact_info {
   min-height: 395px;
   background: url("../images/bcg-contact-info.png") no-repeat;
   background-size: cover; }
   .section-contact_info .content-info {
-    background: #ffbe00;
+    background: #8b8b8b;
     padding: 20px; }
     .section-contact_info .content-info h2 {
       background: url("../images/h2-line.png") no-repeat bottom center;

@@ -11,6 +11,7 @@ libraries:
 
 regions:
   content: Content
+  actions: Actions
   schoenen: Schoenen
   sleutel: Sleutels
   gravures: Gravures

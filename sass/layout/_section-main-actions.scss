@@ -31,13 +31,21 @@
   }
 }
 
-// ////////////////////////
+// /////////////////////////
 // Actions content
-// ///////////////////////
+// ////////////////////////
 .actions {
   margin-top: 15px;
   .actions__content {
-    padding: 0 15px;
-    border: solid 1px $yellow;
+    padding: 0 15px 15px 15px;
+    border: solid 1px #ffffff;
+    background: url("../images/bcg_actions_gray.png") repeat;
+    transition: 0.7s;
+    &:hover {
+      background: $dark-gray;
+    }
+    a {
+      @include url;
+    }
   }
 }
