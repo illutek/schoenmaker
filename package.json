@@ -21,7 +21,4 @@
     "gulp-sass": "~2.3.2",
     "gulp-rename": "~1.2.2"
   },
-  "dependencies": {
-    "granim": "~1.0.3"
-  }
 }
