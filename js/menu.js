@@ -6,10 +6,12 @@ $(document).ready(function () {
     $('.menu-header-main').addClass('hiddenmenu');
 
     $('.showmenu-btn').click(function(){
+        $(this).hide();
         $('.menu-header-main').toggleClass('hiddenmenu');
     });
 
     $('.closemenu-btn').click(function(){
         $('.menu-header-main').toggleClass('hiddenmenu');
+        $('.showmenu-btn').show();
     });
 });
