@@ -61,11 +61,14 @@
     <div class="container main-actions__container">
       <div class="row">
         <div class="col-md-6 col-md-push-6 actions">
-          <div class="actions__content">
-            {# actions zichtbaar tot ingestelde datum #}
-            {{ page.actions }}
-          </div>
+
+            <div class="">
+              {# actions zichtbaar tot ingestelde datum #}
+              {{ page.actions }}
+            </div>
+
         </div>
+
         <div class="col-md-6 col-md-pull-6 main-content">
           <main role="main">
             <div class="layout-content">
@@ -116,7 +119,7 @@
       </div>
     </div>
   </section>
-{# rond de titel en de korte info een tag rond geplaatst in de view via resultaten herschrijven #}
+  {# rond de titel en de korte info een tag rond geplaatst in de view via resultaten herschrijven #}
   <section class="section-core-business-info wow fadeIn" data-wow-duration="3s">
     <div class="container">
       <div class="corebusinessinfo__shoemaking content" id="core__shoemakingDIV">
@@ -161,9 +164,13 @@
         <div class="col-md-6 wow fadeIn" data-wow-duration="3s">
           <div class="content-info">
             <h2>Contactgegevens</h2>
+
             <p>Brugstraat 13</p>
+
             <p>3550 Heusden-Zolder</p>
+
             <p>Telefoon: 0495509492</p>
+
             <p><a href="{{ base_path }}contact/ons_contacteren">Route</a></p>
           </div>
 

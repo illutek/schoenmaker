@@ -5,7 +5,7 @@
 #}
 
  {% if content.field_info_actie | render is not empty %}
-   <div class="actions__content">
+   <div class="actions--full__content">
      <article{{ attributes }}>
        {{ title_prefix }}
        {% if not page %}
@@ -17,9 +17,10 @@
 
        <div{{ content_attributes }}>
          {{ content.field_info_actie }}
-           <a href="{{ url }}">{{ 'Meer info' | trans }}</a>
+         <div class="action-flyer">
+           {{ content.field_actie_folder }}
+         </div>
        </div>
-
      </article>
    </div>
 
