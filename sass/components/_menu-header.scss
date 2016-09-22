@@ -2,11 +2,12 @@
 // @@ ++ Menu Header
 //================================
 
+// menu-header-cta is verhuisd naar section-company-name
+// Het hamburger icon n-is niet duidelijk genoeg plaatsen
+// daar extra het woord MENU voor dus geen plaats meer
+// voor het cta gebeuren.
 .menu-header-cta {
-  position: absolute;
-  z-index: 1;
-  right: 120px;
-  top: 40px;
+  margin-top: 15px;
   li {
     position: relative;
     display: block;
@@ -46,6 +47,34 @@
 // ///////////////////////////////////
 // Main menu
 // //////////////////////////////////
+
+.menu-header-button {
+  background: rgba(162,103,69, 0.75);
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  right: 35px;
+  padding: 10px;
+  label {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    line-height: 200%;
+    font-size: 1.5em;
+    float: left;
+    margin-right: 15px;
+  }
+  .showmenu-btn {
+    width: 48px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      width: 42px;
+    }
+  }
+}
+
 .menu-header-main {
   width: 100%;
   height: 100%;
@@ -89,20 +118,7 @@
   }
 }
 
-.menu-header-button {
-  position: absolute;
-  z-index: 1;
-  right: 35px;
-  .showmenu-btn {
-    width: 48px;
-    margin: 35px 0;
-    cursor: pointer;
-    transition: 0.5s;
-    &:hover {
-      width: 42px;
-    }
-  }
-}
+
 
 @include mQuery(479px) {
   .menu-header-main {
@@ -113,6 +129,11 @@
     }
   }
   .menu-header-button {
+    top: 0;
+    background: rgba(162,103,69, 0.1);
+    label {
+      display: none;
+    }
     .showmenu-btn {
       width: 28px;
       &:hover {

@@ -6,7 +6,6 @@ $(document).ready(function () {
     //$('.menu-header-main').addClass('showmenu');
 
     $('.showmenu-btn').click(function(){
-        $(this).hide();
         $('.menu-header-main').toggleClass('showmenu');
     });
 
