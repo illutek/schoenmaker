@@ -1,0 +1,14 @@
+//=========================================================
+// @@ ++ Images Region
+// = region op de page.html.twig file onderaan de tekst
+//=========================================================
+
+.field--name-field-afbeelding {
+  .field__item {
+    display: inline-block;
+    margin: 10px;
+    img {
+      float: left;
+    }
+  }
+}

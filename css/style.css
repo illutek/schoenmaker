@@ -87,7 +87,7 @@ section {
 .section-company-name {
   position: relative;
   height: 300px;
-  background: url("../images/header_bcg-color.jpg") no-repeat;
+  background: url("../images/header_bcg-color-Ronny.jpg") no-repeat;
   background-size: cover; }
   .section-company-name .container-company-name .company__name {
     margin-top: 80px; }
@@ -299,6 +299,9 @@ footer {
   .actions--full__content h2 {
     margin: 0; }
 
+.view-empty {
+  margin-top: 25px; }
+
 .menu-header-cta {
   margin-top: 15px; }
   .menu-header-cta li {
@@ -398,6 +401,12 @@ footer {
       width: 28px; }
       .menu-header-button .showmenu-btn:hover {
         width: 24px; } }
+
+.field--name-field-afbeelding .field__item {
+  display: inline-block;
+  margin: 10px; }
+  .field--name-field-afbeelding .field__item img {
+    float: left; }
 
 .content-contactform .form-control {
   border: none;
