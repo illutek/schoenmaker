@@ -3,9 +3,21 @@
 //================================
 
 .section-page {
-  background: url("../images/bcg-content-page-cognac.png") no-repeat 0% 50%;
+  //background: url("../images/bcg-content-page-cognac.png") no-repeat 0% 50%;
   min-height: 550px;
-  h2 {
-    color: #000000;
+  .container-page {
+    border: solid 1px $cognac;
+    //box-shadow: 0 0 0  $cognac-dark1;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 1px 1px 7px $cognac-dark1;
+    }
+    .container-page__layout-content {
+      margin: 25px 15px;
+    }
+    a {
+      @include url;
+      color: black;
+    }
   }
 }

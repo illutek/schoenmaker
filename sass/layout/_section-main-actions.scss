@@ -12,6 +12,9 @@
   .main-actions__container {
     background: url("../images/bcg-container-aboutus-cognac.png") no-repeat;
     background-size: cover;
+    .main-content {
+      padding-bottom: 25px;
+    }
     h2 {
       text-align: center;
       background: url("../images/h2-line.png") no-repeat bottom center;
@@ -43,9 +46,6 @@
     transition: 0.7s;
     &:hover {
       background: $dark-gray;
-    }
-    a {
-      @include url;
     }
   }
 }

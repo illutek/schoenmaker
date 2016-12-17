@@ -12,7 +12,7 @@ section {
 
 @include mQuery(479px) {
   section {
-    margin-bottom: 0;
+    margin-bottom: 15px;
     h2 {
       font-size: 1.5em;
     }

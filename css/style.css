@@ -50,27 +50,40 @@ table {
 
 html, body {
   margin: 0;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  font-size: 16px; }
 
 h1 {
   font-size: 2.875em;
-  color: #000000; }
+  color: #000000;
+  padding-bottom: 15px; }
 
 h2 {
   font-size: 2.125em;
   padding-bottom: 35px;
   letter-spacing: 2px; }
 
+h3 {
+  font-size: 1.75em;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
 p {
-  line-height: 38px;
-  margin: 15px 0 15px;
-  font-size: 16px; }
+  line-height: 2em;
+  margin: 5px 0 5px;
+  font-size: 1em; }
 
 a {
   color: #ffffff; }
   a:hover {
     color: #ffffff;
     text-decoration: none; }
+
+li {
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: 25px;
+  line-height: 1.5em; }
 
 section {
   margin-bottom: 50px; }
@@ -80,7 +93,7 @@ section {
 
 @media screen and (max-width: 479px) {
   section {
-    margin-bottom: 0; }
+    margin-bottom: 15px; }
     section h2 {
       font-size: 1.5em; } }
 
@@ -183,6 +196,8 @@ section {
   .section-main-actions .main-actions__container {
     background: url("../images/bcg-container-aboutus-cognac.png") no-repeat;
     background-size: cover; }
+    .section-main-actions .main-actions__container .main-content {
+      padding-bottom: 25px; }
     .section-main-actions .main-actions__container h2 {
       text-align: center;
       background: url("../images/h2-line.png") no-repeat bottom center; }
@@ -204,16 +219,6 @@ section {
     transition: 0.7s; }
     .actions .actions__content:hover {
       background: #8b8b8b; }
-    .actions .actions__content a:before {
-      font-family: FontAwesome;
-      content: "\f08e";
-      display: inline-block;
-      padding-right: 3px; }
-    .actions .actions__content a:hover:before {
-      font-family: FontAwesome;
-      content: "\f14c";
-      display: inline-block;
-      padding-right: 5px; }
 
 .section-contact_info {
   min-height: 395px;
@@ -283,10 +288,26 @@ footer {
           padding-right: 5px; } }
 
 .section-page {
-  background: url("../images/bcg-content-page-cognac.png") no-repeat 0% 50%;
   min-height: 550px; }
-  .section-page h2 {
-    color: #000000; }
+  .section-page .container-page {
+    border: solid 1px #a26745;
+    transition: 0.5s; }
+    .section-page .container-page:hover {
+      box-shadow: 1px 1px 7px #905c3d; }
+    .section-page .container-page .container-page__layout-content {
+      margin: 25px 15px; }
+    .section-page .container-page a {
+      color: black; }
+      .section-page .container-page a:before {
+        font-family: FontAwesome;
+        content: "\f08e";
+        display: inline-block;
+        padding-right: 3px; }
+      .section-page .container-page a:hover:before {
+        font-family: FontAwesome;
+        content: "\f14c";
+        display: inline-block;
+        padding-right: 5px; }
 
 .actions--full__content {
   border: solid 1px #905c3d;
@@ -466,7 +487,9 @@ footer {
   h1 {
     font-size: 1.5em; }
   .section-aboutus {
-    height: 600px; } }
+    height: 600px; }
+  .section-page .container-page .container-page__layout-content {
+    margin: 15px 5px; } }
 
 .tabs a {
   background-color: #ffbe00; }

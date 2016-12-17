@@ -5,6 +5,7 @@
 html, body {
   margin: 0;
   font-family: "Open Sans";
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, p {}
@@ -12,6 +13,7 @@ h1, h2, h3, h4, h5, p {}
 h1 {
   font-size: 2.875em;
   color: #000000;
+  padding-bottom: 15px;
 }
 
 h2 {
@@ -20,10 +22,16 @@ h2 {
   letter-spacing: 2px;
 }
 
+h3 {
+  font-size: 1.75em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 p {
-  line-height: 38px;
-  margin: 15px 0 15px;
-  font-size: 16px;
+  line-height: 2em;
+  margin: 5px 0 5px;
+  font-size: 1em;
 }
 
 // Include of Fontawesome icon on section.scss
@@ -34,4 +42,11 @@ a {
     color: #ffffff;
     text-decoration: none;
   }
+}
+
+li {
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: 25px;
+  line-height: 1.5em;
 }
