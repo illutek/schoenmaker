@@ -443,12 +443,20 @@ footer {
     height: 130px; }
   .content-contactform .form-control:first-child {
     margin-bottom: 30px; }
+  .content-contactform .form-control::-webkit-input-placeholder {
+    color: white; }
+  .content-contactform .form-control:-moz-placeholder {
+    color: white; }
+  .content-contactform .form-control::-moz-placeholder {
+    color: white; }
+  .content-contactform .form-control:-ms-input-placeholder {
+    color: white; }
 
 .content-contactform .btn-custom {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  color: #8b8b8b;
+  color: white;
   background: #a26745;
   transition: 0.5s; }
   .content-contactform .btn-custom:hover {
@@ -468,13 +476,22 @@ footer {
     height: 50px; }
   .page__content-contactform .form-control.height__textarea {
     height: 130px; }
+  .page__content-contactform .form-control::-webkit-input-placeholder {
+    color: white; }
+  .page__content-contactform .form-control:-moz-placeholder {
+    color: white; }
+  .page__content-contactform .form-control::-moz-placeholder {
+    color: white; }
+  .page__content-contactform .form-control:-ms-input-placeholder {
+    color: white; }
 
 .page__content-contactform .btn-custom {
   height: 40px;
   width: 100px;
   border-radius: 0;
   background: #a26745;
-  border: solid 1px #ffffff; }
+  border: solid 1px #ffffff;
+  color: white; }
 
 @media screen and (max-width: 479px) {
   .content-contactform input[type=submit] {

@@ -29,14 +29,21 @@
     &:first-child {
       margin-bottom: 30px;
     }
-    // TODO om een of andere rede wordt de color van de placeholder niet gewijzigd (mixin)
-    // TODO gaan dit met Bootstrap uitvoeren
+    @include placeholder {
+      color: white;
+    }
+    // geeft volgende code
+    // .content-contactform .form-control ::-webkit-input-placeholder {
+    // zou volgende moeten zijn
+    // .content-contactform .form-control::-webkit-input-placeholder {
+    // opgelost in de mixin zelf door & toe te voegen aan elke regel
+    // http://stackoverflow.com/questions/17181849/placeholder-mixin-scss-css#
   }
   .btn-custom {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    color: $dark-gray;
+    color: white;
     background: $cognac;
     transition: 0.5s;
     &:hover {
@@ -54,6 +61,9 @@
   .form-control {
     @include form__control;
     border: solid 1px #ffffff;
+    @include placeholder {
+      color: white;
+    }
   }
   // dit om de submit button niet rond te tonen
   .btn-custom {
@@ -62,6 +72,7 @@
     border-radius: 0;
     background: $cognac;
     border: solid 1px #ffffff;
+    color: white;
   }
 }
 
