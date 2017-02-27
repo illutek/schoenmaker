@@ -1,10 +1,15 @@
 #Werkwijze en een aantal opmerkingen
 
+##NPM 
+Dit enkel voor de sass compliler (Gulp) en de bower install.  
+
 ##Bower
-Een eerste project waar ik bower gebruik.   
+Een eerste project waar ik Bower gebruik.   
 bower.json - file met de nodige pakketten (dependencies)  
+Bij dit project WOW.js, Bootstrap, Font-Awesome, animate.css en jquery-stellar
 .bowerrc file - (config file) nu in dit geval niet echt nodig, omdat ik de direcotory instel op de 
-default "bower_components"
+default "bower_components"  
+http://blog.teamtreehouse.com/getting-started-bower
 
 ##Video
 Dit verhaal gaat niet door.
@@ -35,17 +40,39 @@ Icon url toegevoegd in de scss via een mixin
 
 
 ##SASS
+Laatste project met scss, we gaan voor sass.
 http://sass-lang.com/documentation/Sass/Script/Functions.html
 
+Zeg nu zelf wat het mooiste/gemakkellijkste uitziet  
 
-###TODO
-####Contact page
-De page-contact.html.twig zal het webform of contact form gaan bevatten in de Drupal 8 omgeving
+Dit  
+```
+.nav {
+    margin-top: 50px;
+    a {
+      font-size: 2.125em;
+      &:hover {
+        color: $light-gray;
+      }
+    }
+  }
+```
+Versus volgende  
+```
+.nav
+  margin-top: 50px
+  a
+    font-size: 2.125em
+    &:hover
+      color: $light-gray
+ ```
+
 
 ####Acties
 Titel van de actie, eventueel korte info en mogelijkheid om een pdf te downloaden met de actie.
 
 ##Contactform opmaak
+Wil dit opzetten http://getbootstrap.com/css/#forms
 Het default contact form gebruikt opmaken via form_alter (schoen.theme)
 Ook een eigen class toegevoegd custom__height enkel bij de input field, bij de textarea (message)
 het attributes - rows

@@ -16,4 +16,5 @@ globaljs:
     js/core-info.js: {}
     js/wow-init.js: {}
   dependencies:
+    - core/drupalSettings
     - core/jquery

@@ -2,7 +2,7 @@
 // @@ ++ URL Mixin
 //================================
 
-// voor de url's te voorzien van een fontawesome icon
+// urls provided with a fontawesome icon
 @mixin url {
   &:before {
     font-family: FontAwesome;

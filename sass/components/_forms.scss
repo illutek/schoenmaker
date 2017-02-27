@@ -20,7 +20,7 @@
 }
 
 // ///////////////////////////////////////////////////////
-// De contact block op de home pagina in de footer
+// The contact block on the home page in the footer
 // ///////////////////////////////////////////////////////
 
 .content-contactform {
@@ -32,11 +32,11 @@
     @include placeholder {
       color: white;
     }
-    // geeft volgende code
+    // gives the following code
     // .content-contactform .form-control ::-webkit-input-placeholder {
-    // zou volgende moeten zijn
+    // should be next
     // .content-contactform .form-control::-webkit-input-placeholder {
-    // opgelost in de mixin zelf door & toe te voegen aan elke regel
+    // dissolved in the mixin itself and by adding & to each line
     // http://stackoverflow.com/questions/17181849/placeholder-mixin-scss-css#
   }
   .btn-custom {
@@ -54,7 +54,7 @@
 }
 
 // ///////////////////////////////////////////////////////
-// Contactformulier op de pagina page--contact.html.twig
+// Contact form on the page page - contact.html.twig
 // ///////////////////////////////////////////////////////
 
 .page__content-contactform {
