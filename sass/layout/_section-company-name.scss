@@ -11,8 +11,10 @@
     .company__name {
       margin-top: 80px;
       .company-title {
-        font-size: 3.875em;
-        color: #ffffff;
+        h1 {
+          font-size: 3.875em;
+          color: #ffffff;
+        }
       }
       .companyname__owners {
         color: #ffffff;
@@ -27,7 +29,9 @@
     .container-company-name {
       .company__name {
         .company-title {
-          font-size: 1.5em;
+          h1 {
+            font-size: 1.5em;
+          }
         }
         .companyname__owners {
           font-size: 1.5em;
@@ -44,7 +48,9 @@
       margin-top: 100px;
       margin-left: 0%;
       .company-title {
-        font-size: 1.5em;
+        h1 {
+          font-size: 1.5em;
+        }
       }
     }
   }

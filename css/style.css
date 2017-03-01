@@ -104,7 +104,7 @@ section {
   background-size: cover; }
   .section-company-name .container-company-name .company__name {
     margin-top: 80px; }
-    .section-company-name .container-company-name .company__name .company-title {
+    .section-company-name .container-company-name .company__name .company-title h1 {
       font-size: 3.875em;
       color: #ffffff; }
     .section-company-name .container-company-name .company__name .companyname__owners {
@@ -112,7 +112,7 @@ section {
       font-size: 3em; }
 
 @media screen and (max-width: 479px) {
-  .section-company-name .container-company-name .company__name .company-title {
+  .section-company-name .container-company-name .company__name .company-title h1 {
     font-size: 1.5em; }
   .section-company-name .container-company-name .company__name .companyname__owners {
     font-size: 1.5em; } }
@@ -123,7 +123,7 @@ section {
     .section-company-name .company__name {
       margin-top: 100px;
       margin-left: 0%; }
-      .section-company-name .company__name .company-title {
+      .section-company-name .company__name .company-title h1 {
         font-size: 1.5em; } }
 
 .section-core-business-btn {
