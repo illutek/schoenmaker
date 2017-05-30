@@ -1,9 +1,9 @@
-#Werkwijze en een aantal opmerkingen
+# Werkwijze en een aantal opmerkingen
 
-##NPM 
+## NPM 
 Dit enkel voor de sass compliler (Gulp) en de bower install.  
 
-##Bower
+## Bower
 Een eerste project waar ik Bower gebruik.   
 bower.json - file met de nodige pakketten (dependencies)  
 Bij dit project WOW.js, Bootstrap, Font-Awesome, animate.css en jquery-stellar
@@ -11,11 +11,11 @@ Bij dit project WOW.js, Bootstrap, Font-Awesome, animate.css en jquery-stellar
 default "bower_components"  
 http://blog.teamtreehouse.com/getting-started-bower
 
-##Video
+## Video
 Dit verhaal gaat niet door.
 Een JavaScript oplossing toegepast om de video responsief te maken http://jsfiddle.net/bosspetta/wokoyytv/ 
 
-##Fontawesome
+## Fontawesome
 Icon url toegevoegd in de scss via een mixin
 ```
 @mixin url {
@@ -36,10 +36,10 @@ Icon url toegevoegd in de scss via een mixin
 }
 ```
 
-##WOW.js
+## WOW.js
 
 
-##SASS
+## SASS
 Laatste project met scss, we gaan voor sass.
 http://sass-lang.com/documentation/Sass/Script/Functions.html
 
@@ -68,10 +68,10 @@ Versus volgende
  ```
 
 
-####Acties
+#### Acties
 Titel van de actie, eventueel korte info en mogelijkheid om een pdf te downloaden met de actie.
 
-##Contactform opmaak
+## Contactform opmaak
 Wil dit opzetten http://getbootstrap.com/css/#forms
 Het default contact form gebruikt opmaken via form_alter (schoen.theme)
 Ook een eigen class toegevoegd custom__height enkel bij de input field, bij de textarea (message)
@@ -86,7 +86,7 @@ het attributes - rows
 ```
 Bron: http://drupal.stackexchange.com/questions/159154/drupal-8-theme-a-contact-form
 
-###BEM
+### BEM
 Notatie wel gebruikt maar niet echt volgens de regels ga dit bij een volgende beter moeten doen.
 Bron: 
 http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
